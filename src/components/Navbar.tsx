@@ -1,0 +1,84 @@
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { Menu, X, Phone } from "lucide-react";
+
+const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/anfahrt", label: "Anfahrt" },
+  { to: "/kontakt", label: "Kontakt" },
+];
+
+const Navbar = () => {
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+
+  return (
+    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
+      <div className="container flex items-center justify-between h-16 md:h-20">
+        <Link to="/" className="flex items-center gap-2">
+          <span className="text-xl md:text-2xl font-bold text-primary tracking-tight">IDA</span>
+          <span className="text-xs md:text-sm text-muted-foreground font-medium leading-tight hidden sm:block">
+            Internistisch-<br />Diabetologische Arztpraxis
+          </span>
+        </Link>
+
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks.map((l) => (
+            <Link
+              key={l.to}
+              to={l.to}
+              className={`text-sm font-semibold transition-colors hover:text-accent ${
+                pathname === l.to ? "text-accent" : "text-foreground"
+              }`}
+            >
+              {l.label}
+            </Link>
+          ))}
+          <a
+            href="tel:+4935773770"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
+          >
+            <Phone className="w-4 h-4" />
+            035773 770
+          </a>
+        </nav>
+
+        <button
+          className="md:hidden p-2 text-foreground"
+          onClick={() => setOpen(!open)}
+          aria-label="Menü öffnen"
+        >
+          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+      </div>
+
+      {open && (
+        <div className="md:hidden bg-card border-t">
+          <nav className="container py-4 flex flex-col gap-3">
+            {navLinks.map((l) => (
+              <Link
+                key={l.to}
+                to={l.to}
+                onClick={() => setOpen(false)}
+                className={`text-base font-semibold py-2 ${
+                  pathname === l.to ? "text-accent" : "text-foreground"
+                }`}
+              >
+                {l.label}
+              </Link>
+            ))}
+            <a
+              href="tel:+4935773770"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"
+            >
+              <Phone className="w-4 h-4" />
+              035773 770
+            </a>
+          </nav>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Navbar;
