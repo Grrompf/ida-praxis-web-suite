@@ -49,7 +49,7 @@
     "by_car": "Samochodem",
     "by_car_desc": "Z Weißwasser: ok. 15 min. trasą B156.\nZ Görlitz: ok. 40 min. trasą B115. Parking bezpośrednio przed praktyką.",
     "public_transport": "Komunikacja publiczna",
-    "public_transport_desc": "Połączenia autobusowe z Weißwasser i Bad Muskau. Przystanek „Krauschwitz Mitte", 3 min. pieszo.",
+    "public_transport_desc": "Połączenia autobusowe z Weißwasser i Bad Muskau. Przystanek Krauschwitz Mitte, 3 min. pieszo.",
     "map_consent": "Aby chronić Twoje dane, mapa zostanie załadowana dopiero po wyrażeniu zgody (RODO).",
     "load_map": "Załaduj mapę",
     "map_popup": "IDA-Praxis\n{{street}}\n{{zipCity}}"
