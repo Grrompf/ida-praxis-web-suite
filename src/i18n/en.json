@@ -76,7 +76,7 @@
     "subject_general": "General enquiry",
     "message": "Message",
     "message_placeholder": "How can we help you?",
-    "privacy_agree": "I agree to the <link>privacy policy</link> and consent to the processing of my data.",
+    "privacy_agree": "I agree to the {{linkStart}}privacy policy{{linkEnd}} and consent to the processing of my data.",
     "send": "Send message",
     "success_title": "Thank you!",
     "success_message": "Your message has been sent successfully. We will get back to you as soon as possible.",

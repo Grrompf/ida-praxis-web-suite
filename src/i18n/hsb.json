@@ -76,7 +76,7 @@
     "subject_general": "Powšitkowne naprašowanje",
     "message": "Powěsć",
     "message_placeholder": "Kak móžemy Wam pomhać?",
-    "privacy_agree": "Přihłosuju so <link>šćitej datow</link> a sym ze předźěłanjom mojich datow přezjedny/a.",
+    "privacy_agree": "Přihłosuju so {{linkStart}}šćitej datow{{linkEnd}} a sym ze předźěłanjom mojich datow přezjedny/a.",
     "send": "Powěsć pósłać",
     "success_title": "Wulki dźak!",
     "success_message": "Waša powěsć bu wuspěšnje pósłana. Přizjewimy so pola Was tak spěšnje kaž móžno.",

@@ -76,7 +76,7 @@
     "subject_general": "Zapytanie ogólne",
     "message": "Wiadomość",
     "message_placeholder": "Jak możemy Ci pomóc?",
-    "privacy_agree": "Zgadzam się z <link>polityką prywatności</link> i wyrażam zgodę na przetwarzanie moich danych.",
+    "privacy_agree": "Zgadzam się z {{linkStart}}polityką prywatności{{linkEnd}} i wyrażam zgodę na przetwarzanie moich danych.",
     "send": "Wyślij wiadomość",
     "success_title": "Dziękujemy!",
     "success_message": "Twoja wiadomość została wysłana pomyślnie. Skontaktujemy się z Tobą jak najszybciej.",

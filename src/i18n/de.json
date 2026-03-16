@@ -76,7 +76,7 @@
     "subject_general": "Allgemeine Anfrage",
     "message": "Nachricht",
     "message_placeholder": "Wie können wir Ihnen helfen?",
-    "privacy_agree": "Ich stimme der <link>Datenschutzerklärung</link> zu und bin mit der Verarbeitung meiner Daten einverstanden.",
+    "privacy_agree": "Ich stimme der {{linkStart}}Datenschutzerklärung{{linkEnd}} zu und bin mit der Verarbeitung meiner Daten einverstanden.",
     "send": "Nachricht senden",
     "success_title": "Vielen Dank!",
     "success_message": "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen.",
