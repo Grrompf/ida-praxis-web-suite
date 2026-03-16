@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
-
-const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/anfahrt", label: "Anfahrt" },
-  { to: "/kontakt", label: "Kontakt" },
-];
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { practice } from "@/config/practice";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const { pathname } = useLocation();
+  const { t } = useTranslation();
+
+  const navLinks = [
+    { to: "/", label: t("nav.home") },
+    { to: "/anfahrt", label: t("nav.directions") },
+    { to: "/kontakt", label: t("nav.contact") },
+  ];
 
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
@@ -22,7 +26,7 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((l) => (
             <Link
               key={l.to}
@@ -34,12 +38,13 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
+          <LanguageSwitcher />
           <a
-            href="tel:+4935773770"
+            href={`tel:${practice.phoneFull}`}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
           >
             <Phone className="w-4 h-4" />
-            035773 770
+            {practice.phone}
           </a>
         </nav>
 
@@ -67,12 +72,13 @@ const Navbar = () => {
                 {l.label}
               </Link>
             ))}
+            <LanguageSwitcher />
             <a
-              href="tel:+4935773770"
+              href={`tel:${practice.phoneFull}`}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"
             >
               <Phone className="w-4 h-4" />
-              035773 770
+              {practice.phone}
             </a>
           </nav>
         </div>
