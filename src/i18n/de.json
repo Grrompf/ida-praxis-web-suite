@@ -49,7 +49,7 @@
     "by_car": "Mit dem Auto",
     "by_car_desc": "Von Weißwasser: ca. 15 Min. über die B156.\nVon Görlitz: ca. 40 Min. über die B115. Parkplätze direkt vor der Praxis.",
     "public_transport": "Öffentliche Verkehrsmittel",
-    "public_transport_desc": "Busverbindung ab Weißwasser und Bad Muskau. Haltestelle „Krauschwitz Mitte", 3 Min. Fußweg.",
+    "public_transport_desc": "Busverbindung ab Weißwasser und Bad Muskau. Haltestelle Krauschwitz Mitte, 3 Min. Fußweg.",
     "map_consent": "Zum Schutz Ihrer Daten wird die Karte erst nach Ihrer Zustimmung geladen (DSGVO).",
     "load_map": "Karte laden",
     "map_popup": "IDA-Praxis\n{{street}}\n{{zipCity}}"
