@@ -1,9 +1,26 @@
 import { Heart, Activity, Baby, Stethoscope, Pill, ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import diabetologieImg from "@/assets/diabetologie-symbol.jpg";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+
+const RevealCard = ({ children, delay }: { children: React.ReactNode; delay: number }) => {
+  const { ref, isVisible } = useScrollReveal();
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 ease-out ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+      }`}
+      style={{ transitionDelay: `${delay}ms` }}
+    >
+      {children}
+    </div>
+  );
+};
 
 const ServicesSection = () => {
   const { t } = useTranslation();
+  const heroReveal = useScrollReveal();
 
   const services = [
     { icon: Activity, titleKey: "services.diabetology", descKey: "services.diabetology_desc" },
@@ -17,7 +34,12 @@ const ServicesSection = () => {
   return (
     <section className="py-20 md:py-28">
       <div className="container">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-14">
+        <div
+          ref={heroReveal.ref}
+          className={`grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-14 transition-all duration-700 ease-out ${
+            heroReveal.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
@@ -36,17 +58,16 @@ const ServicesSection = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.map((s) => (
-            <div
-              key={s.titleKey}
-              className="bg-card rounded-xl p-6 border hover:shadow-lg hover:border-accent/30 transition-all duration-300 group"
-            >
-              <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-                <s.icon className="w-6 h-6 text-accent" />
+          {services.map((s, i) => (
+            <RevealCard key={s.titleKey} delay={i * 100}>
+              <div className="bg-card rounded-xl p-6 border hover:shadow-lg hover:border-accent/30 transition-all duration-300 group h-full">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
+                  <s.icon className="w-6 h-6 text-accent" />
+                </div>
+                <h3 className="font-bold text-foreground mb-2">{t(s.titleKey)}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">{t(s.descKey)}</p>
               </div>
-              <h3 className="font-bold text-foreground mb-2">{t(s.titleKey)}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{t(s.descKey)}</p>
-            </div>
+            </RevealCard>
           ))}
         </div>
       </div>
