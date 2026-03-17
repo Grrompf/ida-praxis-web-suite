@@ -27,6 +27,16 @@
     "checkup": "Preventive Check-ups",
     "checkup_desc": "Check-ups, health prevention and individual counselling."
   },
+  "hours": {
+    "label": "Office Hours",
+    "title": "Our Opening Hours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "note": "And by appointment. Please call to schedule."
+  },
   "team": {
     "label": "Our Team",
     "title": "Expertise meets Compassion",
