@@ -7,11 +7,11 @@ const OfficeHoursSection = () => {
   const { ref, isVisible } = useScrollReveal();
 
   const days = [
-    { dayKey: "hours.monday", time: "08:00 – 12:00 | 14:00 – 18:00" },
-    { dayKey: "hours.tuesday", time: "08:00 – 12:00 | 14:00 – 18:00" },
-    { dayKey: "hours.wednesday", time: "08:00 – 12:00" },
-    { dayKey: "hours.thursday", time: "08:00 – 12:00 | 14:00 – 18:00" },
-    { dayKey: "hours.friday", time: "08:00 – 12:00" },
+    { dayKey: "hours.monday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
+    { dayKey: "hours.tuesday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
+    { dayKey: "hours.wednesday", morning: "08:00 – 12:00", afternoon: null },
+    { dayKey: "hours.thursday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
+    { dayKey: "hours.friday", morning: "08:00 – 12:00", afternoon: null },
   ];
 
   return (
