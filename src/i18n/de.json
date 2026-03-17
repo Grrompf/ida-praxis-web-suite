@@ -35,6 +35,16 @@
     "osorgina_role": "Fachärztin für Innere Medizin",
     "osorgina_desc": "Engagierte Internistin mit besonderem Fokus auf kardiovaskuläre Prävention und patientennahe Versorgung. Ergänzt das Praxisteam mit Kompetenz und Empathie."
   },
+  "hours": {
+    "label": "Sprechzeiten",
+    "title": "Unsere Öffnungszeiten",
+    "monday": "Montag",
+    "tuesday": "Dienstag",
+    "wednesday": "Mittwoch",
+    "thursday": "Donnerstag",
+    "friday": "Freitag",
+    "note": "Und nach Vereinbarung. Bitte vereinbaren Sie telefonisch einen Termin."
+  },
   "contact_bar": {
     "title": "Wir sind für Sie da.",
     "subtitle": "Vereinbaren Sie noch heute Ihren Termin.",

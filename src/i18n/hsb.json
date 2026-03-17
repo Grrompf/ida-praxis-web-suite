@@ -27,6 +27,16 @@
     "checkup": "Předstražne přepytowanja",
     "checkup_desc": "Check-upy, strowotna prewencija a indiwiduelne poradźowanje."
   },
+  "hours": {
+    "label": "Rěčne hodźiny",
+    "title": "Naše wotewrjenske časy",
+    "monday": "Póndźela",
+    "tuesday": "Wutora",
+    "wednesday": "Srjeda",
+    "thursday": "Štwórtk",
+    "friday": "Pjatk",
+    "note": "A po dojednanju. Prošu zazwońće za termin."
+  },
   "team": {
     "label": "Naš team",
     "title": "Kompetenca zetka čłowjeskosć",

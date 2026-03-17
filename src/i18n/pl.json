@@ -27,6 +27,16 @@
     "checkup": "Badania profilaktyczne",
     "checkup_desc": "Badania kontrolne, profilaktyka zdrowotna i indywidualne doradztwo."
   },
+  "hours": {
+    "label": "Godziny przyjęć",
+    "title": "Nasze godziny otwarcia",
+    "monday": "Poniedziałek",
+    "tuesday": "Wtorek",
+    "wednesday": "Środa",
+    "thursday": "Czwartek",
+    "friday": "Piątek",
+    "note": "Oraz po uzgodnieniu. Prosimy o kontakt telefoniczny."
+  },
   "team": {
     "label": "Nasz zespół",
     "title": "Kompetencja spotyka się z empatią",
