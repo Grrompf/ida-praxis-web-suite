@@ -3,7 +3,7 @@ import { supportedLanguages, languageMeta, type SupportedLanguage } from "@/i18n
 
 const flagImages: Record<SupportedLanguage, string> = {
   de: "https://flagcdn.com/w40/de.png",
-  hsb: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Flag_of_Sorbs.svg/40px-Flag_of_Sorbs.svg.png",
+  hsb: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Sorbs.svg/40px-Flag_of_Sorbs.svg.png",
   pl: "https://flagcdn.com/w40/pl.png",
   en: "https://flagcdn.com/w40/gb.png",
 };
