@@ -43,12 +43,21 @@ const OfficeHoursSection = () => {
               {days.map((d, i) => (
                 <div
                   key={d.dayKey}
-                  className={`flex items-center justify-between px-6 py-4 ${
+                  className={`flex items-center justify-between gap-4 px-4 sm:px-6 py-4 ${
                     i % 2 === 0 ? "bg-card" : "bg-muted/30"
                   }`}
                 >
-                  <span className="font-medium text-foreground">{t(d.dayKey)}</span>
-                  <span className="text-muted-foreground text-sm">{d.time}</span>
+                  <span className="font-medium text-foreground shrink-0">{t(d.dayKey)}</span>
+                  <span className="text-muted-foreground text-sm text-right">
+                    {d.morning}
+                    {d.afternoon && (
+                      <>
+                        <span className="hidden sm:inline"> | </span>
+                        <br className="sm:hidden" />
+                        {d.afternoon}
+                      </>
+                    )}
+                  </span>
                 </div>
               ))}
             </div>
