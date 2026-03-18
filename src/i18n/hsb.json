@@ -17,6 +17,8 @@
   "services": {
     "label": "Posłužby",
     "title": "Naš wobłuk lěkowanja",
+    "general": "Powšitkowna medicina",
+    "general_desc": "Domjacy lěkarske zastaranje za cyłu swójbu – wot akutneho lěkowanja přez předstražne přepytowanja hač k dołhodobnemu zastaranju chroniskich chorosćow.",
     "diabetology": "Diabetologija",
     "diabetology_desc": "Diagnostika a terapija za diabetes typ 1 a 2, insulinowa pumpowa terapija, CGM-systemy.",
     "gestational": "Samodruhosćowy diabetes",

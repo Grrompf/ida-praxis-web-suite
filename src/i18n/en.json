@@ -17,6 +17,8 @@
   "services": {
     "label": "Services",
     "title": "Our Treatment Spectrum",
+    "general": "General Practice",
+    "general_desc": "Family medicine for all ages – from acute care and preventive check-ups to long-term management of chronic conditions.",
     "diabetology": "Diabetology",
     "diabetology_desc": "Diagnostics and therapy for type 1 & 2 diabetes, insulin pump therapy, CGM systems.",
     "gestational": "Gestational Diabetes",
