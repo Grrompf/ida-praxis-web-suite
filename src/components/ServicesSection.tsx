@@ -1,4 +1,4 @@
-import { Heart, Activity, Baby, Stethoscope, Pill, ShieldCheck } from "lucide-react";
+import { Heart, Activity, Baby, Stethoscope, Pill, ShieldCheck, UserCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import diabetologieImg from "@/assets/diabetologie-symbol.jpg";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
