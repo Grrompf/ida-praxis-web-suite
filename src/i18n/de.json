@@ -1,4 +1,7 @@
 {
+  "common": {
+    "city_name": "Krauschwitz"
+  },
   "nav": {
     "home": "Home",
     "directions": "Anfahrt",
