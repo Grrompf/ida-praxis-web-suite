@@ -72,7 +72,7 @@ const Kontakt = () => {
               { icon: Phone, label: t("contact.phone"), value: practice.phone, href: `tel:${practice.phoneFull}` },
               { icon: Phone, label: t("contact.fax"), value: practice.fax },
               { icon: Mail, label: t("contact.email"), value: practice.email, href: `mailto:${practice.email}` },
-              { icon: MapPin, label: t("contact.address"), value: `${practice.address.street}\n${practice.address.zipCity}` },
+              { icon: MapPin, label: t("contact.address"), value: `${practice.address.street}\n${practice.address.zip} ${t("common.city_name")}` },
               { icon: Clock, label: t("contact.hours"), value: t("contact.hours_value") },
             ].map((item) => (
               <div key={item.label} className="bg-card rounded-xl border p-4 flex items-start gap-3">

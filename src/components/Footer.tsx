@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="space-y-2 text-sm text-primary-foreground/80">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                {practice.address.street}, {practice.address.zipCity}
+                {practice.address.street}, {practice.address.zip} {t("common.city_name")}
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0" />

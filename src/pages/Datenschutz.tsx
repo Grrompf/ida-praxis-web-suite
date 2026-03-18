@@ -18,7 +18,7 @@ const Datenschutz = () => {
             <p>
               {practice.fullName}<br />
               {practice.doctor1} & {practice.doctor2}<br />
-              {practice.address.street}, {practice.address.zipCity}<br />
+              {practice.address.street}, {practice.address.zip} {t("common.city_name")}<br />
               {t("contact.email")}: {practice.email}<br />
               {t("contact.phone")}: {practice.phone}
             </p>
