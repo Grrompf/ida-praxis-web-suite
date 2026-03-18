@@ -1,4 +1,7 @@
 {
+  "common": {
+    "city_name": "Krušwica"
+  },
   "nav": {
     "home": "Startowa strona",
     "directions": "Přijězd",

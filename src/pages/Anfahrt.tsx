@@ -41,7 +41,7 @@ const Anfahrt = () => {
                   <p className="text-muted-foreground text-sm">
                     {practice.name}<br />
                     {practice.address.street}<br />
-                    {practice.address.zipCity}
+                    {practice.address.zip} {t("common.city_name")}
                   </p>
                 </div>
               </div>
@@ -86,7 +86,7 @@ const Anfahrt = () => {
                   <Popup>
                     <strong>{practice.name}</strong><br />
                     {practice.address.street}<br />
-                    {practice.address.zipCity}
+                    {practice.address.zip} {t("common.city_name")}
                   </Popup>
                 </Marker>
               </MapContainer>

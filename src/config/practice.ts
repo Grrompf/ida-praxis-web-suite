@@ -6,7 +6,8 @@ export const practice = {
   doctor2: "Elena Osorgina",
   address: {
     street: "Geschwister-Scholl-Str. 3",
-    zipCity: "02957 Krauschwitz",
+    zip: "02957",
+    city: "Krauschwitz",
   },
   phone: "035771 69285",
   phoneFull: "+4935771 69285",

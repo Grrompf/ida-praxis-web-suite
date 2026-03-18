@@ -15,7 +15,7 @@ const Impressum = () => {
               {practice.fullName}<br />
               {practice.doctor1} & {practice.doctor2}<br />
               {practice.address.street}<br />
-              {practice.address.zipCity}
+              {practice.address.zip} {t("common.city_name")}
             </p>
           </div>
           <div>
