@@ -23,6 +23,7 @@ const ServicesSection = () => {
   const heroReveal = useScrollReveal();
 
   const services = [
+    { icon: UserCheck, titleKey: "services.general", descKey: "services.general_desc" },
     { icon: Activity, titleKey: "services.diabetology", descKey: "services.diabetology_desc" },
     { icon: Baby, titleKey: "services.gestational", descKey: "services.gestational_desc" },
     { icon: Stethoscope, titleKey: "services.internal", descKey: "services.internal_desc" },
