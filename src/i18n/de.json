@@ -17,6 +17,8 @@
   "services": {
     "label": "Leistungen",
     "title": "Unser Behandlungsspektrum",
+    "general": "Allgemeinmedizin",
+    "general_desc": "Hausärztliche Versorgung für die ganze Familie – von Akutbehandlungen über Vorsorge bis zur Langzeitbetreuung chronischer Erkrankungen.",
     "diabetology": "Diabetologie",
     "diabetology_desc": "Diagnostik und Therapie von Diabetes Typ 1 & 2, Insulinpumpentherapie, CGM-Systeme.",
     "gestational": "Schwangerschaftsdiabetes",

@@ -17,6 +17,8 @@
   "services": {
     "label": "Usługi",
     "title": "Nasze spektrum leczenia",
+    "general": "Medycyna ogólna",
+    "general_desc": "Opieka lekarza rodzinnego dla całej rodziny – od leczenia ostrych przypadków przez profilaktykę po długoterminową opiekę nad chorobami przewlekłymi.",
     "diabetology": "Diabetologia",
     "diabetology_desc": "Diagnostyka i terapia cukrzycy typu 1 i 2, terapia pompą insulinową, systemy CGM.",
     "gestational": "Cukrzyca ciążowa",
