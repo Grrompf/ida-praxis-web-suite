@@ -9,9 +9,9 @@ const OfficeHoursSection = () => {
   const days = [
     { dayKey: "hours.monday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
     { dayKey: "hours.tuesday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
-    { dayKey: "hours.wednesday", morning: "08:00 – 12:00", afternoon: null },
+    { dayKey: "hours.wednesday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
     { dayKey: "hours.thursday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
-    { dayKey: "hours.friday", morning: "08:00 – 12:00", afternoon: null },
+    { dayKey: "hours.friday", morning: "08:00 – 12:00", afternoon: "14:00 – 18:00" },
   ];
 
   return (
