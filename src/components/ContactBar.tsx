@@ -17,7 +17,7 @@ const ContactBar = () => {
           <div className="flex flex-wrap items-center gap-4">
             <Link to="/kontakt" className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-colors">
               <Phone className="w-4 h-4" /> {t("contact_bar.call")}
-            </a>
+            </Link>
             <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent-foreground/10 text-accent-foreground border border-accent-foreground/20 px-5 py-3 rounded-lg font-semibold text-sm hover:bg-accent-foreground/20 transition-colors">
               <Mail className="w-4 h-4" /> {t("contact_bar.message")}
             </Link>
