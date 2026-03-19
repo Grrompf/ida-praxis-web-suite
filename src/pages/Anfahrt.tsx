@@ -58,24 +58,12 @@ const Anfahrt = () => {
 
           <div className="bg-card rounded-xl border overflow-hidden min-h-[400px] flex items-center justify-center">
             {mapConsent ? (
-              <MapContainer
-                center={[lat, lon]}
-                zoom={15}
-                scrollWheelZoom={false}
-                className="w-full h-full min-h-[400px]"
-              >
-                <TileLayer
-                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
-                <Marker position={[lat, lon]} icon={defaultIcon}>
-                  <Popup>
-                    <strong>{practice.name}</strong><br />
-                    {practice.address.street}<br />
-                    {practice.address.zip} {t("common.city_name")}
-                  </Popup>
-                </Marker>
-              </MapContainer>
+              <iframe
+                title="OpenStreetMap"
+                className="w-full h-full min-h-[400px] border-0"
+                src={`https://www.openstreetmap.org/export/embed.html?bbox=${lon - 0.01},${lat - 0.005},${lon + 0.01},${lat + 0.005}&layer=mapnik&marker=${lat},${lon}`}
+                loading="lazy"
+              />
             ) : (
               <div className="text-center p-8">
                 <MapPin className="w-10 h-10 text-muted-foreground mx-auto mb-4" />
