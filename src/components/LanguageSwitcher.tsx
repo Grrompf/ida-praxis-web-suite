@@ -73,7 +73,7 @@ const LanguageSwitcher = () => {
         </button>
 
         {open && (
-          <div className="absolute right-0 top-full mt-1 bg-card border border-border rounded-lg shadow-lg py-1 z-50 min-w-[140px]">
+          <div className="absolute right-0 top-full mt-1 bg-card border border-border rounded-lg shadow-lg py-1 z-50 min-w-[180px]">
             {supportedLanguages.map((lang) => {
               const meta = languageMeta[lang];
               const isActive = i18n.language === lang;
