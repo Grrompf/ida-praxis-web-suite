@@ -135,5 +135,11 @@
     "s5_text": "Korzystamy z usługi mapowej OpenStreetMap (OSM). Mapa jest ładowana dopiero po wyraźnej zgodzie (rozwiązanie dwóch kliknięć).",
     "s6_title": "6. Twoje prawa",
     "s6_text": "Masz prawo w każdej chwili do bezpłatnej informacji o pochodzeniu, odbiorcy i celu przechowywanych danych osobowych."
+  },
+  "cookie": {
+    "text": "Ta strona internetowa wykorzystuje wyłącznie technicznie niezbędne pliki cookie w celu zapewnienia podstawowej funkcjonalności. Nie są stosowane pliki cookie śledzące ani analityczne.",
+    "more": "Dowiedz się więcej",
+    "accept": "Akceptuję",
+    "decline": "Odrzucam"
   }
 }

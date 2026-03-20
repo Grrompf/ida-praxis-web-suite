@@ -135,5 +135,11 @@
     "s5_text": "Wir nutzen den Kartendienst von OpenStreetMap (OSM). Beim Aufruf der Kartenfunktion werden Daten an die Server von OpenStreetMap übertragen. Die Karte wird erst nach expliziter Zustimmung geladen (Zwei-Klick-Lösung).",
     "s6_title": "6. Ihre Rechte",
     "s6_text": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder Löschung dieser Daten zu verlangen."
+  },
+  "cookie": {
+    "text": "Diese Website verwendet nur technisch notwendige Cookies, um die grundlegende Funktionalität sicherzustellen. Es werden keine Tracking- oder Analyse-Cookies eingesetzt.",
+    "more": "Mehr erfahren",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
   }
 }
