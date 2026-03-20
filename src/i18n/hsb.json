@@ -135,5 +135,11 @@
     "s5_text": "Wužiwamy kartowu słužbu OpenStreetMap (OSM). Karta so hakle po jasnym přizwolenju začita (dwuklikowe rozrisanje).",
     "s6_title": "6. Waše prawa",
     "s6_text": "Maće kóždy čas prawo na bjezpłatnu informaciju wo pochad, přijimarjach a zaměrje Wašich składowanych wosobnych datow."
+  },
+  "cookie": {
+    "text": "Tuta webstrona wužiwa jenož technisce trěbne placki (cookies), zo by zakładnu funkcionalnosć zaručiła. Žane slědowanske abo analyzowe placki so njewužiwaja.",
+    "more": "Wjace zhonić",
+    "accept": "Akceptować",
+    "decline": "Wotpokazać"
   }
 }

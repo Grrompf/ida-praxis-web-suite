@@ -135,5 +135,11 @@
     "s5_text": "We use the mapping service of OpenStreetMap (OSM). When the map function is called, data is transmitted to the OpenStreetMap servers. The map is only loaded after explicit consent (two-click solution).",
     "s6_title": "6. Your rights",
     "s6_text": "You have the right to receive information free of charge at any time about the origin, recipient and purpose of your stored personal data. You also have the right to request the correction or deletion of this data."
+  },
+  "cookie": {
+    "text": "This website only uses technically necessary cookies to ensure basic functionality. No tracking or analytics cookies are used.",
+    "more": "Learn more",
+    "accept": "Accept",
+    "decline": "Decline"
   }
 }
