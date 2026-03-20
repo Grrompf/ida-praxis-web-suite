@@ -14,8 +14,8 @@ export const practice = {
   fax: "035771 641-33",
   email: "info@ida-praxis.de",
   map: {
-    lat: 51.5157115,
-    lon: 14.7173844,
+    lat: 51.5156972,
+    lon: 14.7174520,
   },
   hours: "Mo–Fr: 8:00–12:00 & 14:00–18:00",
 } as const;
