@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapPin, Car, Train } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
-import locationImg from "@/assets/location.jpg";
+import locationImg from "@/assets/location.webp";
 
 const Anfahrt = () => {
   const [mapConsent, setMapConsent] = useState(false);
