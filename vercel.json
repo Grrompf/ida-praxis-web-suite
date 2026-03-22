@@ -1,17 +1,36 @@
-// Inspect package.json. If dependency "next" exists, create vercel.json using @vercel/next; otherwise use @vercel/static-build.
-// Create file vercel.json at project root with the following content depending on the framework.
-
 {
   "version": 2,
   "builds": [
-    // if using Next.js:
-    // {"src":"package.json","use":"@vercel/next"}
-    // otherwise:
-    {"src":"package.json","use":"@vercel/static-build"}
+    { "src": "package.json", "use": "@vercel/static-build" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*\\.(?:js|css|woff2?|ttf|otf|eot))",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/(.*\\.(?:png|jpg|jpeg|webp|avif|svg|gif|ico))",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=86400" }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
   ],
   "routes": [
-    // basic rewrite to SPA index for client-side routing
-    {"src":"/_next/static/(.*)","headers":{"cache-control":"public, max-age=31536000, immutable"}},
-    {"src":"^/(.*)$","dest":"/index.html"}
+    { "src": "/assets/(.*)", "headers": { "cache-control": "public, max-age=31536000, immutable" } },
+    { "src": "^/(.*)$", "dest": "/index.html" }
   ]
 }
