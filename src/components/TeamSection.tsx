@@ -12,12 +12,14 @@ const TeamSection = () => {
       role: t("team.pliquett_role"),
       image: pliquettImg,
       desc: t("team.pliquett_desc"),
+      imagePosition: "85% center",
     },
     {
       name: practice.doctor2,
       role: t("team.osorgina_role"),
       image: osorginaImg,
       desc: t("team.osorgina_desc"),
+      imagePosition: "center top",
     },
   ];
 
