@@ -1,6 +1,6 @@
 import { Heart, Activity, Baby, Stethoscope, Pill, ShieldCheck, UserCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import diabetologieImg from "@/assets/diabetologie-symbol.jpg";
+import diabetologieImg from "@/assets/diabetologie-symbol.webp";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const RevealCard = ({ children, delay }: { children: React.ReactNode; delay: number }) => {

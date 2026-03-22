@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImg from "@/assets/praxis-interior.jpg";
+import heroImg from "@/assets/praxis-interior.webp";
 import { practice } from "@/config/practice";
 
 const HeroSection = () => {
