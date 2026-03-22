@@ -10,7 +10,7 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="IDA-Praxis Empfangsbereich" className="w-full h-full object-cover" loading="eager" />
+        <img src={heroImg} alt="IDA-Praxis Empfangsbereich" className="w-full h-full object-cover" loading="eager" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 bg-primary/75" />
       </div>
       <div className="relative container py-24 md:py-36 lg:py-44">
