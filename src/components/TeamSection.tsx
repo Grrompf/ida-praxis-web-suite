@@ -38,7 +38,7 @@ const TeamSection = () => {
                   src={m.image}
                   alt={`Portrait ${m.name}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  style={m.image === pliquettImg ? { objectPosition: '85% center' } : { objectPosition: 'top' }}
+                  style={{ objectPosition: m.imagePosition }}
                   loading="lazy"
                 />
               </div>
