@@ -12,14 +12,12 @@ const TeamSection = () => {
       role: t("team.pliquett_role"),
       image: pliquettImg,
       desc: t("team.pliquett_desc"),
-      imagePosition: "85% center",
     },
     {
       name: practice.doctor2,
       role: t("team.osorgina_role"),
       image: osorginaImg,
       desc: t("team.osorgina_desc"),
-      imagePosition: "center top",
     },
   ];
 
@@ -38,7 +36,7 @@ const TeamSection = () => {
                   src={m.image}
                   alt={`Portrait ${m.name}`}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  style={{ objectPosition: m.imagePosition }}
+                  style={m.image === pliquettImg ? { objectPosition: '85% center' } : { objectPosition: 'top' }}
                   loading="lazy"
                 />
               </div>
