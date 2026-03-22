@@ -36,7 +36,10 @@ const TeamSection = () => {
                   src={m.image}
                   alt={`Portrait ${m.name}`}
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  width={400}
+                  height={300}
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="p-6">
