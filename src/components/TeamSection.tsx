@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import pliquettImg from "@/assets/pliquett.jpg";
-import osorginaImg from "@/assets/osorgina.jpg";
+import pliquettImg from "@/assets/pliquett.webp";
+import osorginaImg from "@/assets/osorgina.webp";
 import { practice } from "@/config/practice";
 
 const TeamSection = () => {
