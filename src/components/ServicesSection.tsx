@@ -47,7 +47,10 @@ const ServicesSection = () => {
                 src={diabetologieImg}
                 alt="Diabetologie – Blutzuckermessgerät und grüner Apfel"
                 className="w-full h-64 md:h-80 object-cover"
+                width={600}
+                height={450}
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
             </div>
