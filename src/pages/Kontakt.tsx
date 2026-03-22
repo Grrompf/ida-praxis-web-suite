@@ -24,7 +24,7 @@ const Kontakt = () => {
     const fieldErrors: Record<string, string> = {};
 
     if (!form.name?.trim()) fieldErrors.name = t("contact.error_name");
-    if (!form.email?.trim() || !z.string().email().safeParse(form.email).success)
+    if (!form.email?.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
       fieldErrors.email = t("contact.error_email");
     if (!form.subject?.trim()) fieldErrors.subject = t("contact.error_subject");
     if (!form.message?.trim() || (form.message?.trim().length ?? 0) < 10)
