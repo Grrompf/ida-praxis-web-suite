@@ -2,9 +2,9 @@ import { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
+import CookieConsent from "./components/CookieConsent";
 
 const Footer = lazy(() => import("./components/Footer"));
-const CookieConsent = lazy(() => import("./components/CookieConsent"));
 const Anfahrt = lazy(() => import("./pages/Anfahrt"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
 const Impressum = lazy(() => import("./pages/Impressum"));
@@ -44,9 +44,7 @@ const App = () => (
         <Footer />
       </Suspense>
       <DeferredLoader>
-        <Suspense fallback={null}>
-          <CookieConsent />
-        </Suspense>
+        <CookieConsent />
       </DeferredLoader>
     </div>
   </BrowserRouter>
