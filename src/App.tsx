@@ -1,7 +1,5 @@
 import { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { Toaster } from "@/components/ui/sonner";
 import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
 
@@ -27,34 +25,31 @@ const DeferredLoader = ({ children }: { children: React.ReactNode }) => {
 };
 
 const App = () => (
-  <TooltipProvider>
-    <Toaster />
-    <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-1">
-          <Suspense fallback={<div className="min-h-screen" />}>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/anfahrt" element={<Anfahrt />} />
-              <Route path="/kontakt" element={<Kontakt />} />
-              <Route path="/impressum" element={<Impressum />} />
-              <Route path="/datenschutz" element={<Datenschutz />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </Suspense>
-        </main>
-        <Suspense fallback={null}>
-          <Footer />
+  <BrowserRouter>
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-1">
+        <Suspense fallback={<div className="min-h-screen" />}>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/anfahrt" element={<Anfahrt />} />
+            <Route path="/kontakt" element={<Kontakt />} />
+            <Route path="/impressum" element={<Impressum />} />
+            <Route path="/datenschutz" element={<Datenschutz />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
         </Suspense>
-        <DeferredLoader>
-          <Suspense fallback={null}>
-            <CookieConsent />
-          </Suspense>
-        </DeferredLoader>
-      </div>
-    </BrowserRouter>
-  </TooltipProvider>
+      </main>
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
+      <DeferredLoader>
+        <Suspense fallback={null}>
+          <CookieConsent />
+        </Suspense>
+      </DeferredLoader>
+    </div>
+  </BrowserRouter>
 );
 
 export default App;
