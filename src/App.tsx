@@ -29,6 +29,7 @@ const DeferredLoader = ({ children }: { children: React.ReactNode }) => {
 const App = () => (
   <TooltipProvider>
     <Toaster />
+    <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-1">
