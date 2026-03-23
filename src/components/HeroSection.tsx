@@ -21,10 +21,10 @@ const HeroSection = () => {
           fetchPriority="high"
           decoding="async"
         />
-        <div className="absolute inset-0 bg-primary/75" />
+        <div className="absolute inset-0" style={{ backgroundColor: 'hsl(204 100% 25% / 0.75)' }} />
       </div>
       <div className="relative container py-24 md:py-36 lg:py-44">
-        <div className="max-w-2xl animate-fade-in-up">
+        <div className="max-w-2xl">
           <p className="text-accent font-semibold text-sm md:text-base mb-3 tracking-wide uppercase">
             {t("hero.subtitle")}
           </p>
