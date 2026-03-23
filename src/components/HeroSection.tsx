@@ -31,7 +31,7 @@ const HeroSection = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6 whitespace-pre-line">
             {t("hero.title")}
           </h1>
-          <p className="text-primary-foreground/85 text-base md:text-lg leading-relaxed mb-8 max-w-lg">
+          <p className="text-primary-foreground/85 text-base md:text-lg leading-relaxed mb-8 max-w-lg" style={{ contentVisibility: 'auto' }}>
             {t("hero.description", { doctor1: practice.doctor1, doctor2: practice.doctor2 })}
           </p>
           <div className="flex flex-wrap gap-4">
