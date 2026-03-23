@@ -19,7 +19,7 @@ const HeroSection = () => {
           height={540}
           loading="eager"
           fetchPriority="high"
-          decoding="sync"
+          decoding="auto"
         />
         <div className="absolute inset-0" style={{ backgroundColor: 'hsl(204 100% 25% / 0.75)' }} />
       </div>
