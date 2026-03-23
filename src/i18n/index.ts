@@ -1,6 +1,5 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
 
 import de from "./de.json";
 import en from "./en.json";
@@ -17,8 +16,20 @@ export const languageMeta: Record<SupportedLanguage, { label: string; flag: stri
   en:  { label: "English",         flag: "🇬🇧", alt: "Language: English (Sprache: Englisch)" },
 };
 
+// Detect language synchronously without the heavy LanguageDetector plugin
+const detectLanguage = (): string => {
+  try {
+    const stored = localStorage.getItem("i18nextLng");
+    if (stored && supportedLanguages.includes(stored as SupportedLanguage)) return stored;
+  } catch { /* localStorage unavailable */ }
+
+  const nav = navigator.language?.split("-")[0];
+  if (nav && supportedLanguages.includes(nav as SupportedLanguage)) return nav;
+
+  return "de";
+};
+
 i18n
-  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources: {
@@ -27,14 +38,10 @@ i18n
       pl:  { translation: pl },
       hsb: { translation: hsb },
     },
+    lng: detectLanguage(),
     fallbackLng: "de",
     supportedLngs: [...supportedLanguages],
     interpolation: { escapeValue: false },
-    detection: {
-      order: ["path", "localStorage", "navigator"],
-      lookupFromPathIndex: 0,
-      caches: ["localStorage"],
-    },
   });
 
 export default i18n;
