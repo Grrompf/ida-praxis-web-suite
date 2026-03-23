@@ -44,9 +44,7 @@ const App = () => (
         <Footer />
       </Suspense>
       <DeferredLoader>
-        <Suspense fallback={null}>
-          <CookieConsent />
-        </Suspense>
+        <CookieConsent />
       </DeferredLoader>
     </div>
   </BrowserRouter>
