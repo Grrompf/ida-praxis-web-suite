@@ -63,7 +63,14 @@
     <div id="root">
       <div class="flex flex-col min-h-screen">
         <div class="shell-nav"><div class="shell-nav-inner"><span class="shell-logo">IDA</span></div></div>
-        <div class="shell-hero"></div>
+        <div class="shell-hero">
+          <img src="/hero-640.webp" srcset="/hero-640.webp 640w, /hero-960.webp 960w, /hero-1200.webp 1200w" sizes="100vw" alt="" class="shell-hero-bg" width="960" height="540" fetchpriority="high" decoding="auto" />
+          <div class="shell-hero-overlay"></div>
+          <div class="shell-hero-content">
+            <p class="shell-hero-label">Diabetologie · Innere Medizin</p>
+            <h1 class="shell-hero-h1">Ihre Gesundheit in<br>besten Händen.</h1>
+          </div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.tsx"></script>
