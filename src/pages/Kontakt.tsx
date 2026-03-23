@@ -27,13 +27,13 @@ const Kontakt = () => {
     e.preventDefault();
     const fieldErrors: Record<string, string> = {};
 
-    if (!form.name?.trim()) fieldErrors.name = "contact.error_name";
+    if (!form.name?.trim()) fieldErrors.name = t("contact.error_name");
     if (!form.email?.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-      fieldErrors.email = "contact.error_email";
-    if (!form.subject?.trim()) fieldErrors.subject = "contact.error_subject";
+      fieldErrors.email = t("contact.error_email");
+    if (!form.subject?.trim()) fieldErrors.subject = t("contact.error_subject");
     if (!form.message?.trim() || (form.message?.trim().length ?? 0) < 10)
-      fieldErrors.message = "contact.error_message";
-    if (!form.privacy) fieldErrors.privacy = "contact.error_privacy";
+      fieldErrors.message = t("contact.error_message");
+    if (!form.privacy) fieldErrors.privacy = t("contact.error_privacy");
 
     if (Object.keys(fieldErrors).length > 0) {
       setErrors(fieldErrors);
