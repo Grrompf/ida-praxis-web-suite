@@ -116,7 +116,7 @@ const Kontakt = () => {
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     placeholder={t("contact.email_placeholder")}
                   />
-                  {errors.email && <p className="text-destructive text-xs mt-1">{t(errors.email)}</p>}
+                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
