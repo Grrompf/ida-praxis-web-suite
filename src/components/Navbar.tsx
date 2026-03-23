@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { practice } from "@/config/practice";
+
+const LanguageSwitcher = lazy(() => import("./LanguageSwitcher"));
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
