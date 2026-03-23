@@ -9,8 +9,9 @@ const ContactBar = lazy(() => import("@/components/ContactBar"));
 const Index = () => (
   <>
     <HeroSection />
-    <ServicesSection />
-    <Suspense fallback={<div className="min-h-[200px]" />}>
+    <Suspense fallback={<div className="min-h-[400px]" />}>
+      <ServicesSection />
+    </Suspense>
       <TeamSection />
     </Suspense>
     <Suspense fallback={<div className="min-h-[200px]" />}>
