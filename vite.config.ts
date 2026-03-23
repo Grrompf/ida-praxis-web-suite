@@ -21,13 +21,6 @@ export default defineConfig(({ mode }) => ({
   build: {
     target: "es2020",
     modulePreload: { polyfill: false },
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          "react-vendor": ["react", "react-dom", "react/jsx-runtime"],
-          "router": ["react-router-dom"],
-        },
-      },
-    },
+    cssCodeSplit: false,
   },
 }));
