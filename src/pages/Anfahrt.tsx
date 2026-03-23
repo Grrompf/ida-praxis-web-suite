@@ -2,7 +2,7 @@ import { useState } from "react";
 import { MapPin, Car, Train } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
-import locationImg from "@/assets/location.webp";
+import locationImg from "@/assets/location-600.webp";
 
 const Anfahrt = () => {
   const [mapConsent, setMapConsent] = useState(false);
@@ -52,7 +52,7 @@ const Anfahrt = () => {
             </div>
 
             <div className="rounded-xl overflow-hidden shadow-lg">
-              <img src={locationImg} alt="Krauschwitz Umgebung" className="w-full h-48 object-cover" width={1200} height={675} loading="lazy" decoding="async" />
+              <img src={locationImg} alt="Krauschwitz Umgebung" className="w-full h-48 object-cover" width={600} height={338} loading="lazy" decoding="async" />
             </div>
           </div>
 

@@ -1,6 +1,7 @@
 import { Heart, Activity, Baby, Stethoscope, Pill, ShieldCheck, UserCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import diabetologieImg from "@/assets/diabetologie-symbol.webp";
+import diabetologieImg400 from "@/assets/diabetologie-symbol-400.webp";
+import diabetologieImg600 from "@/assets/diabetologie-symbol.webp";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const RevealCard = ({ children, delay }: { children: React.ReactNode; delay: number }) => {
@@ -44,11 +45,13 @@ const ServicesSection = () => {
           <div className="lg:col-span-5 order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src={diabetologieImg}
+                src={diabetologieImg400}
+                srcSet={`${diabetologieImg400} 400w, ${diabetologieImg600} 600w`}
+                sizes="(min-width: 1024px) 40vw, 100vw"
                 alt="Diabetologie – Blutzuckermessgerät und grüner Apfel"
                 className="w-full h-64 md:h-80 object-cover"
-                width={600}
-                height={450}
+                width={400}
+                height={300}
                 loading="lazy"
                 decoding="async"
               />

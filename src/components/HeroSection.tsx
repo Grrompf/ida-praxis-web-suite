@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImg from "@/assets/praxis-interior.webp";
+import heroImg640 from "@/assets/praxis-interior-640.webp";
+import heroImg960 from "@/assets/praxis-interior-960.webp";
+import heroImg1200 from "@/assets/praxis-interior.webp";
 import { practice } from "@/config/practice";
 
 const HeroSection = () => {
@@ -10,7 +12,18 @@ const HeroSection = () => {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroImg} alt="IDA-Praxis Empfangsbereich" className="w-full h-full object-cover" width={1200} height={675} loading="eager" fetchPriority="high" decoding="async" />
+        <img
+          src={heroImg960}
+          srcSet={`${heroImg640} 640w, ${heroImg960} 960w, ${heroImg1200} 1200w`}
+          sizes="100vw"
+          alt="IDA-Praxis Empfangsbereich"
+          className="w-full h-full object-cover"
+          width={960}
+          height={540}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
+        />
         <div className="absolute inset-0 bg-primary/75" />
       </div>
       <div className="relative container py-24 md:py-36 lg:py-44">
