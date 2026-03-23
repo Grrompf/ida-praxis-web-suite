@@ -23,13 +23,13 @@ const Kontakt = () => {
     e.preventDefault();
     const fieldErrors: Record<string, string> = {};
 
-    if (!form.name?.trim()) fieldErrors.name = t("contact.error_name");
+    if (!form.name?.trim()) fieldErrors.name = "contact.error_name";
     if (!form.email?.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email))
-      fieldErrors.email = t("contact.error_email");
-    if (!form.subject?.trim()) fieldErrors.subject = t("contact.error_subject");
+      fieldErrors.email = "contact.error_email";
+    if (!form.subject?.trim()) fieldErrors.subject = "contact.error_subject";
     if (!form.message?.trim() || (form.message?.trim().length ?? 0) < 10)
-      fieldErrors.message = t("contact.error_message");
-    if (!form.privacy) fieldErrors.privacy = t("contact.error_privacy");
+      fieldErrors.message = "contact.error_message";
+    if (!form.privacy) fieldErrors.privacy = "contact.error_privacy";
 
     if (Object.keys(fieldErrors).length > 0) {
       setErrors(fieldErrors);
@@ -101,7 +101,7 @@ const Kontakt = () => {
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     placeholder={t("contact.name_placeholder")}
                   />
-                  {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
+                  {errors.name && <p className="text-destructive text-xs mt-1">{t(errors.name)}</p>}
                 </div>
                 <div>
                   <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.email")} *</label>
@@ -112,7 +112,7 @@ const Kontakt = () => {
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     placeholder={t("contact.email_placeholder")}
                   />
-                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                  {errors.email && <p className="text-destructive text-xs mt-1">{t(errors.email)}</p>}
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -139,7 +139,7 @@ const Kontakt = () => {
                     <option>{t("contact.subject_prescription")}</option>
                     <option>{t("contact.subject_general")}</option>
                   </select>
-                  {errors.subject && <p className="text-destructive text-xs mt-1">{errors.subject}</p>}
+                  {errors.subject && <p className="text-destructive text-xs mt-1">{t(errors.subject)}</p>}
                 </div>
               </div>
               <div>
@@ -151,7 +151,7 @@ const Kontakt = () => {
                   className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 resize-none"
                   placeholder={t("contact.message_placeholder")}
                 />
-                {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
+                {errors.message && <p className="text-destructive text-xs mt-1">{t(errors.message)}</p>}
               </div>
               <label className="flex items-start gap-2 cursor-pointer">
                 <input
@@ -166,7 +166,7 @@ const Kontakt = () => {
                   {" *"}
                 </span>
               </label>
-              {errors.privacy && <p className="text-destructive text-xs">{errors.privacy}</p>}
+              {errors.privacy && <p className="text-destructive text-xs">{t(errors.privacy)}</p>}
               <button
                 type="submit"
                 className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:bg-accent/90 transition-colors"
