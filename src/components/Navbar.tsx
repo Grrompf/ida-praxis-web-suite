@@ -17,7 +17,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b shadow-sm">
+    <header className="sticky top-0 z-50 bg-card border-b shadow-sm">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-xl md:text-2xl font-bold text-primary tracking-tight">IDA</span>
