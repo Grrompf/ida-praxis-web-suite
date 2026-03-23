@@ -155,7 +155,7 @@ const Kontakt = () => {
                   className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 resize-none"
                   placeholder={t("contact.message_placeholder")}
                 />
-                {errors.message && <p className="text-destructive text-xs mt-1">{t(errors.message)}</p>}
+                {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
               </div>
               <label className="flex items-start gap-2 cursor-pointer">
                 <input
