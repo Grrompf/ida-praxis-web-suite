@@ -1,21 +1,32 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "./components/Navbar";
-import CookieConsent from "./components/CookieConsent";
-import Footer from "./components/Footer";
 import Index from "./pages/Index";
 
+const Footer = lazy(() => import("./components/Footer"));
+const CookieConsent = lazy(() => import("./components/CookieConsent"));
 const Anfahrt = lazy(() => import("./pages/Anfahrt"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const Datenschutz = lazy(() => import("./pages/Datenschutz"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
+const DeferredLoader = ({ children }: { children: React.ReactNode }) => {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    if ("requestIdleCallback" in window) {
+      const id = requestIdleCallback(() => setReady(true));
+      return () => cancelIdleCallback(id);
+    }
+    const t = setTimeout(() => setReady(true), 50);
+    return () => clearTimeout(t);
+  }, []);
+  return ready ? <>{children}</> : null;
+};
+
 const App = () => (
   <TooltipProvider>
-    <Sonner />
     <BrowserRouter>
       <div className="flex flex-col min-h-screen">
         <Navbar />
@@ -31,8 +42,14 @@ const App = () => (
             </Routes>
           </Suspense>
         </main>
-        <Footer />
-        <CookieConsent />
+        <Suspense fallback={null}>
+          <Footer />
+        </Suspense>
+        <DeferredLoader>
+          <Suspense fallback={null}>
+            <CookieConsent />
+          </Suspense>
+        </DeferredLoader>
       </div>
     </BrowserRouter>
   </TooltipProvider>
