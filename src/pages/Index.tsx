@@ -1,16 +1,26 @@
+import { lazy, Suspense } from "react";
 import HeroSection from "@/components/HeroSection";
-import TeamSection from "@/components/TeamSection";
-import ServicesSection from "@/components/ServicesSection";
-import OfficeHoursSection from "@/components/OfficeHoursSection";
-import ContactBar from "@/components/ContactBar";
+
+const ServicesSection = lazy(() => import("@/components/ServicesSection"));
+const TeamSection = lazy(() => import("@/components/TeamSection"));
+const OfficeHoursSection = lazy(() => import("@/components/OfficeHoursSection"));
+const ContactBar = lazy(() => import("@/components/ContactBar"));
 
 const Index = () => (
   <>
     <HeroSection />
-    <ServicesSection />
-    <TeamSection />
-    <OfficeHoursSection />
-    <ContactBar />
+    <Suspense fallback={<div className="min-h-[200px]" />}>
+      <ServicesSection />
+    </Suspense>
+    <Suspense fallback={<div className="min-h-[200px]" />}>
+      <TeamSection />
+    </Suspense>
+    <Suspense fallback={<div className="min-h-[200px]" />}>
+      <OfficeHoursSection />
+    </Suspense>
+    <Suspense fallback={<div className="min-h-[200px]" />}>
+      <ContactBar />
+    </Suspense>
   </>
 );
 
