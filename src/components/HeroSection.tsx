@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import heroImg640 from "@/assets/praxis-interior-640.webp";
-import heroImg960 from "@/assets/praxis-interior-960.webp";
-import heroImg1200 from "@/assets/praxis-interior.webp";
 import { practice } from "@/config/practice";
 
 const HeroSection = () => {
@@ -13,8 +10,8 @@ const HeroSection = () => {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={heroImg960}
-          srcSet={`${heroImg640} 640w, ${heroImg960} 960w, ${heroImg1200} 1200w`}
+          src="/hero-960.webp"
+          srcSet="/hero-640.webp 640w, /hero-960.webp 960w, /hero-1200.webp 1200w"
           sizes="100vw"
           alt="IDA-Praxis Empfangsbereich"
           className="w-full h-full object-cover"
