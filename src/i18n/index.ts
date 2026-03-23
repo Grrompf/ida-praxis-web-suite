@@ -27,7 +27,8 @@ const detectLanguage = (): SupportedLanguage => {
 
 const detectedLng = detectLanguage();
 
-const translationLoaders: Record<string, () => Promise<{ default: Record<string, string> }>> = {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const translationLoaders: Record<string, () => Promise<any>> = {
   en:  () => import("./en.json"),
   pl:  () => import("./pl.json"),
   hsb: () => import("./hsb.json"),
