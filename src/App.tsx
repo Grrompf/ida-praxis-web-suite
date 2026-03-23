@@ -2,8 +2,7 @@ import { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Index from "./pages/Index";
-
-const CookieConsent = lazy(() => import("./components/CookieConsent"));
+import CookieConsent from "./components/CookieConsent";
 
 const Footer = lazy(() => import("./components/Footer"));
 const Anfahrt = lazy(() => import("./pages/Anfahrt"));
