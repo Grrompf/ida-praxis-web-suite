@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Phone, Mail, MapPin, Clock, Send, CheckCircle } from "lucide-react";
 import { Toaster, toast } from "sonner";
 import { useTranslation } from "react-i18next";
@@ -17,7 +17,11 @@ const Kontakt = () => {
   const [form, setForm] = useState<ContactForm>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [submitted, setSubmitted] = useState(false);
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    setErrors({});
+  }, [i18n.language]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
