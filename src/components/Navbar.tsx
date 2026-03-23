@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { practice } from "@/config/practice";
+
+const LanguageSwitcher = lazy(() => import("./LanguageSwitcher"));
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -38,7 +39,7 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
-          <LanguageSwitcher />
+          <Suspense fallback={<div className="w-20" />}><LanguageSwitcher /></Suspense>
           <a
             href={`tel:${practice.phoneFull}`}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
@@ -72,7 +73,7 @@ const Navbar = () => {
                 {l.label}
               </Link>
             ))}
-            <LanguageSwitcher />
+            <Suspense fallback={<div className="h-8" />}><LanguageSwitcher /></Suspense>
             <a
               href={`tel:${practice.phoneFull}`}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"

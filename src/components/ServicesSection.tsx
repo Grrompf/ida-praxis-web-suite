@@ -34,7 +34,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 md:py-28">
+    <section className="py-20 md:py-28" style={{ contentVisibility: 'auto', containIntrinsicSize: 'auto 800px' }}>
       <div className="container">
         <div
           ref={heroReveal.ref}
