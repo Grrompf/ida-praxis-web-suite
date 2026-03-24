@@ -2,13 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { supportedLanguages, languageMeta, type SupportedLanguage } from "@/i18n";
 import { ChevronDown } from "lucide-react";
-
-const flagImages: Record<SupportedLanguage, string> = {
-  de: "https://flagcdn.com/w40/de.png",
-  hsb: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Flag_of_Sorbs.svg/40px-Flag_of_Sorbs.svg.png",
-  pl: "https://flagcdn.com/w40/pl.png",
-  en: "https://flagcdn.com/w40/gb.png",
-};
+import flags from "./FlagIcons";
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -25,6 +19,7 @@ const LanguageSwitcher = () => {
 
   const currentLang = i18n.language as SupportedLanguage;
   const currentMeta = languageMeta[currentLang];
+  const CurrentFlag = flags[currentLang];
 
   return (
     <>
@@ -33,6 +28,7 @@ const LanguageSwitcher = () => {
         {supportedLanguages.map((lang) => {
           const meta = languageMeta[lang];
           const isActive = i18n.language === lang;
+          const FlagIcon = flags[lang];
           return (
             <button
               key={lang}
@@ -45,30 +41,20 @@ const LanguageSwitcher = () => {
               title={meta.label}
               aria-label={meta.alt}
             >
-              <img
-                src={flagImages[lang]}
-                alt={meta.alt}
-                className="w-6 h-4 object-cover rounded-sm"
-                loading="lazy"
-              />
+              <FlagIcon />
             </button>
           );
         })}
       </div>
 
-      {/* Dropdown – visible on tablet (sm-md), hidden on lg+ and mobile (<sm handled by Navbar) */}
+      {/* Dropdown – visible on tablet (sm-md), hidden on lg+ */}
       <div className="relative lg:hidden" ref={ref}>
         <button
           onClick={() => setOpen(!open)}
           className="flex items-center gap-1.5 p-1.5 rounded border border-border bg-card hover:bg-muted transition-colors"
           aria-label={currentMeta?.alt}
         >
-          <img
-            src={flagImages[currentLang]}
-            alt={currentMeta?.alt}
-            className="w-6 h-4 object-cover rounded-sm"
-            loading="lazy"
-          />
+          <CurrentFlag />
           <ChevronDown className={`w-3.5 h-3.5 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />
         </button>
 
@@ -77,6 +63,7 @@ const LanguageSwitcher = () => {
             {supportedLanguages.map((lang) => {
               const meta = languageMeta[lang];
               const isActive = i18n.language === lang;
+              const FlagIcon = flags[lang];
               return (
                 <button
                   key={lang}
@@ -88,12 +75,7 @@ const LanguageSwitcher = () => {
                     isActive ? "font-semibold text-accent" : "text-foreground"
                   }`}
                 >
-                  <img
-                    src={flagImages[lang]}
-                    alt={meta.alt}
-                    className="w-6 h-4 object-cover rounded-sm"
-                    loading="lazy"
-                  />
+                  <FlagIcon />
                   {meta.label}
                 </button>
               );
