@@ -42,7 +42,7 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">{t("footer.legal")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/impressum" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">{t("footer.imprint")}</Link>
+                <Link to="/impressum" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">{t("footer.imprint")}</Link>
               </li>
               <li>
                 <Link to="/datenschutz" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">{t("footer.privacy")}</Link>
