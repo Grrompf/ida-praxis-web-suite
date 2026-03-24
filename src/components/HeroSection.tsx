@@ -6,6 +6,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const HeroSection = () => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   return (
     <section className="relative overflow-hidden">
