@@ -45,7 +45,7 @@ const Footer = () => {
                 <Link to="/impressum" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">{t("footer.imprint")}</Link>
               </li>
               <li>
-                <Link to="/datenschutz" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">{t("footer.privacy")}</Link>
+                <Link to="/datenschutz" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">{t("footer.privacy")}</Link>
               </li>
             </ul>
           </div>
