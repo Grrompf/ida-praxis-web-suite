@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-lg font-bold mb-4">{t("footer.contact")}</h3>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
+            <ul className="space-y-2 text-sm text-primary-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
                 {practice.address.street}, {practice.address.zip} {t("common.city_name")}
