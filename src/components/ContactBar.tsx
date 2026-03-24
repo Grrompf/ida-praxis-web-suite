@@ -12,7 +12,7 @@ const ContactBar = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold mb-1">{t("contact_bar.title")}</h2>
-            <p className="text-accent-foreground/80 text-sm">{t("contact_bar.subtitle")}</p>
+            <p className="text-accent-foreground text-sm">{t("contact_bar.subtitle")}</p>
           </div>
           <div className="flex flex-wrap items-center gap-4">
             <a href={`tel:${practice.phoneFull}`} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-colors">
