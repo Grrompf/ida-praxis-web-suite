@@ -18,10 +18,10 @@ const ContactBar = () => {
             <a href={`tel:${practice.phoneFull}`} className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg font-semibold text-sm hover:bg-primary/90 transition-colors">
               <Phone className="w-4 h-4" /> {t("contact_bar.call")}
             </a>
-            <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent-foreground/10 text-accent-foreground border border-accent-foreground/20 px-5 py-3 rounded-lg font-semibold text-sm hover:bg-accent-foreground/20 transition-colors">
+            <Link to="/kontakt" className="inline-flex items-center gap-2 bg-accent-foreground/20 text-accent-foreground border border-accent-foreground/30 px-5 py-3 rounded-lg font-semibold text-sm hover:bg-accent-foreground/30 transition-colors">
               <Mail className="w-4 h-4" /> {t("contact_bar.message")}
             </Link>
-            <Link to="/anfahrt" className="inline-flex items-center gap-2 bg-accent-foreground/10 text-accent-foreground border border-accent-foreground/20 px-5 py-3 rounded-lg font-semibold text-sm hover:bg-accent-foreground/20 transition-colors">
+            <Link to="/anfahrt" className="inline-flex items-center gap-2 bg-accent-foreground/20 text-accent-foreground border border-accent-foreground/30 px-5 py-3 rounded-lg font-semibold text-sm hover:bg-accent-foreground/30 transition-colors">
               <MapPin className="w-4 h-4" /> {t("contact_bar.directions")}
             </Link>
           </div>
