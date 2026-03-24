@@ -12,14 +12,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <h3 className="text-lg font-bold mb-4">{t("footer.practice_name")}</h3>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
+            <p className="text-primary-foreground text-sm leading-relaxed">
               {t("footer.practice_desc")}<br />
               {practice.doctor1} & {practice.doctor2}
             </p>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-4">{t("footer.contact")}</h3>
-            <ul className="space-y-2 text-sm text-primary-foreground/80">
+            <ul className="space-y-2 text-sm text-primary-foreground">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
                 {practice.address.street}, {practice.address.zip} {t("common.city_name")}
@@ -42,15 +42,15 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">{t("footer.legal")}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/impressum" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">{t("footer.imprint")}</Link>
+                <Link to="/impressum" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">{t("footer.imprint")}</Link>
               </li>
               <li>
-                <Link to="/datenschutz" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors">{t("footer.privacy")}</Link>
+                <Link to="/datenschutz" className="text-primary-foreground hover:text-primary-foreground/80 transition-colors">{t("footer.privacy")}</Link>
               </li>
             </ul>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
+        <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground">
           {t("footer.copyright")}
         </div>
       </div>
