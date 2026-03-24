@@ -50,7 +50,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground/60">
+        <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground">
           {t("footer.copyright")}
         </div>
       </div>
