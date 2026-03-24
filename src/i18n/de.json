@@ -100,7 +100,8 @@
     "error_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "error_subject": "Bitte wählen Sie einen Betreff.",
     "error_message": "Die Nachricht muss mindestens 10 Zeichen lang sein.",
-    "error_privacy": "Bitte stimmen Sie der Datenschutzerklärung zu."
+    "error_privacy": "Bitte stimmen Sie der Datenschutzerklärung zu.",
+    "health_data_notice": "Bitte übermitteln Sie über dieses Formular keine Gesundheitsdaten. Besprechen Sie medizinische Anliegen persönlich oder telefonisch."
   },
   "footer": {
     "practice_name": "IDA-Praxis",

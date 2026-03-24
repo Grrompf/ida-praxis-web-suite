@@ -95,6 +95,10 @@ const Kontakt = () => {
             </div>
 
             <form onSubmit={handleSubmit} className="lg:col-span-2 bg-card rounded-xl border p-6 md:p-8 space-y-5">
+              <div className="flex items-start gap-3 bg-muted/50 border border-border rounded-lg p-3.5">
+                <ShieldAlert className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <p className="text-xs text-muted-foreground leading-relaxed">{t("contact.health_data_notice")}</p>
+              </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.name")} *</label>

@@ -100,7 +100,8 @@
     "error_email": "Please enter a valid email address.",
     "error_subject": "Please select a subject.",
     "error_message": "The message must be at least 10 characters long.",
-    "error_privacy": "Please agree to the privacy policy."
+    "error_privacy": "Please agree to the privacy policy.",
+    "health_data_notice": "Please do not submit any health data via this form. Discuss medical matters in person or by phone."
   },
   "footer": {
     "practice_name": "IDA-Praxis",

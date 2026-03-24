@@ -100,7 +100,8 @@
     "error_email": "Prošu zapodajće płaćiwu e-mejlowu adresu.",
     "error_subject": "Prošu wubjerće předmjet.",
     "error_message": "Powěsć dyrbi znajmjeńša 10 znamješkow dołha być.",
-    "error_privacy": "Prošu přihłosujće so šćitej datow."
+    "error_privacy": "Prošu přihłosujće so šćitej datow.",
+    "health_data_notice": "Prošu njepósćelće přez tutón formular žane strowotne daty. Rozmołwjejće medicinske naležnosće wosobinsce abo telefonisce."
   },
   "footer": {
     "practice_name": "IDA-Praxis",
