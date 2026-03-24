@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
             <h3 className="text-lg font-bold mb-4">{t("footer.practice_name")}</h3>
-            <p className="text-primary-foreground/80 text-sm leading-relaxed">
+            <p className="text-primary-foreground text-sm leading-relaxed">
               {t("footer.practice_desc")}<br />
               {practice.doctor1} & {practice.doctor2}
             </p>
