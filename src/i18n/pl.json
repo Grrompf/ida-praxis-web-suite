@@ -100,7 +100,8 @@
     "error_email": "Proszę podać prawidłowy adres e-mail.",
     "error_subject": "Proszę wybrać temat.",
     "error_message": "Wiadomość musi mieć co najmniej 10 znaków.",
-    "error_privacy": "Proszę zaakceptować politykę prywatności."
+    "error_privacy": "Proszę zaakceptować politykę prywatności.",
+    "health_data_notice": "Prosimy nie przesyłać za pośrednictwem tego formularza żadnych danych zdrowotnych. Kwestie medyczne prosimy omawiać osobiście lub telefonicznie."
   },
   "footer": {
     "practice_name": "IDA-Praxis",
