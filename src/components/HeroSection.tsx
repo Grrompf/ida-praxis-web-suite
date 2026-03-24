@@ -44,13 +44,23 @@ const HeroSection = () => {
               <Calendar className="w-4 h-4" />
               {t("hero.cta_appointment")}
             </Link>
-            <Link
-              to="/kontakt"
-              className="inline-flex items-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm md:text-base"
-            >
-              {t("hero.cta_call")}
-              <ArrowRight className="w-4 h-4" />
-            </Link>
+            {isMobile ? (
+              <a
+                href={`tel:${practice.phoneFull}`}
+                className="inline-flex items-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm md:text-base"
+              >
+                {t("hero.cta_call")}
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            ) : (
+              <Link
+                to="/kontakt"
+                className="inline-flex items-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm md:text-base"
+              >
+                {t("hero.cta_call")}
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            )}
           </div>
         </div>
       </div>
