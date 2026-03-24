@@ -25,7 +25,7 @@ const HeroSection = () => {
       </div>
       <div className="relative container py-24 md:py-36 lg:py-44">
         <div className="max-w-2xl">
-          <p className="text-accent font-semibold text-sm md:text-base mb-3 tracking-wide uppercase">
+          <p className="text-primary-foreground/80 font-semibold text-sm md:text-base mb-3 tracking-wide uppercase">
             {t("hero.subtitle")}
           </p>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-tight mb-6 whitespace-pre-line">
