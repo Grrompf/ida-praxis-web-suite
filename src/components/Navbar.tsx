@@ -66,33 +66,40 @@ const Navbar = () => {
 
 
       {open && (
-        <div
-          className="lg:hidden bg-card border-t overflow-hidden animate-fade-in"
-        >
-          <nav className="container py-4 flex flex-col gap-3">
-            {navLinks.map((l) => (
-              <Link
-                key={l.to}
-                to={l.to}
-                onClick={() => setOpen(false)}
-                className={`text-base font-semibold py-2 ${
-                  pathname === l.to ? "text-accent" : "text-foreground"
-                }`}
+        <>
+          <div
+            className="fixed inset-0 top-16 bg-foreground/50 z-40 lg:hidden animate-fade-in"
+            onClick={() => setOpen(false)}
+            aria-hidden="true"
+          />
+          <div
+            className="lg:hidden bg-card border-t overflow-hidden animate-fade-in relative z-50"
+          >
+            <nav className="container py-4 flex flex-col gap-3">
+              {navLinks.map((l) => (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  onClick={() => setOpen(false)}
+                  className={`text-base font-semibold py-2 ${
+                    pathname === l.to ? "text-accent" : "text-foreground"
+                  }`}
+                >
+                  {l.label}
+                </Link>
+              ))}
+              <Suspense fallback={<div className="h-8" />}><LanguageSwitcher /></Suspense>
+              <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
+              <a
+                href={`tel:${practice.phoneFull}`}
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"
               >
-                {l.label}
-              </Link>
-            ))}
-            <Suspense fallback={<div className="h-8" />}><LanguageSwitcher /></Suspense>
-            <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
-            <a
-              href={`tel:${practice.phoneFull}`}
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"
-            >
-              <Phone className="w-4 h-4" />
-              {practice.phone}
-            </a>
-          </nav>
-        </div>
+                <Phone className="w-4 h-4" />
+                {practice.phone}
+              </a>
+            </nav>
+          </div>
+        </>
       )}
     </header>
   );
