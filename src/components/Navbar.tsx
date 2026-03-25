@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-card border-b shadow-sm" role="banner">
+    <header className="sticky top-0 z-50 bg-card border-b shadow-sm" role="banner" style={{ fontSize: '16px' }}>
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2 mr-4">
           <span className="text-xl md:text-2xl font-bold text-primary tracking-tight">IDA</span>
