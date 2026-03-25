@@ -27,7 +27,7 @@ const CookieConsent = () => {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 inset-x-0 z-50 p-4 md:p-6">
+    <div className="fixed bottom-0 inset-x-0 z-50 p-4 md:p-6" role="dialog" aria-label="Cookie-Hinweis" aria-modal="false">
       <div className="container max-w-4xl">
         <div className="bg-card border rounded-xl shadow-lg p-5 md:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4">
           <Shield className="w-6 h-6 text-accent shrink-0 mt-0.5 sm:mt-0" />

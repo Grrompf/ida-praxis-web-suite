@@ -9,7 +9,7 @@ const HeroSection = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden" aria-label="Willkommen">
       <div className="absolute inset-0">
         <img
           src="/hero-960.webp"

@@ -7,7 +7,7 @@ const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <footer className="bg-primary text-primary-foreground">
+    <footer className="bg-primary text-primary-foreground" role="contentinfo">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>

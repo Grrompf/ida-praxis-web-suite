@@ -53,6 +53,8 @@ const LanguageSwitcher = () => {
           onClick={() => setOpen(!open)}
           className="flex items-center gap-1.5 p-1.5 rounded border border-border bg-card hover:bg-muted transition-colors"
           aria-label={currentMeta?.alt}
+          aria-expanded={open}
+          aria-haspopup="listbox"
         >
           <CurrentFlag />
           <ChevronDown className={`w-3.5 h-3.5 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />

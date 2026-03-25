@@ -9,7 +9,7 @@ const ContactBar = () => {
   const isMobile = useIsMobile();
 
   return (
-    <section className="bg-accent text-accent-foreground py-10 md:py-14">
+    <section className="bg-accent text-accent-foreground py-10 md:py-14" aria-label="Kontaktleiste">
       <div className="container">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
