@@ -98,7 +98,7 @@ const GallerySection = () => {
             className="absolute left-2 md:left-6 text-white/80 hover:text-white p-2"
             aria-label="Vorheriges Bild"
           >
-            <ChevronLeft className="w-8 h-8" />
+            <ChevronLeft className="w-8 h-8" aria-hidden="true" />
           </button>
           <img
             src={images[lightbox].src}
