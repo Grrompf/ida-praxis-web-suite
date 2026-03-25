@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2 mr-4">
           <span className="text-xl lg:text-2xl font-bold text-primary tracking-tight">IDA</span>
-          <span className="text-xs lg:text-sm text-muted-foreground font-medium hidden sm:block lg:whitespace-nowrap">
+          <span className="text-xs lg:text-sm text-muted-foreground font-medium hidden sm:block lg:whitespace-nowrap lg:max-w-[200px] xl:max-w-none lg:overflow-hidden lg:text-ellipsis">
             Internistisch-Diabetologische Arztpraxis
           </span>
         </Link>
