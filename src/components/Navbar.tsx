@@ -25,17 +25,17 @@ const Navbar = () => {
       <div className="container flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2 mr-4">
           <span className="text-xl lg:text-2xl font-bold text-primary tracking-tight">IDA</span>
-          <span className="text-xs lg:text-sm text-muted-foreground font-medium hidden sm:block lg:whitespace-nowrap">
+          <span className="text-xs lg:text-sm text-muted-foreground font-medium hidden sm:block lg:whitespace-nowrap lg:max-w-[200px] xl:max-w-none lg:overflow-hidden lg:text-ellipsis">
             Internistisch-Diabetologische Arztpraxis
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-6" aria-label="Hauptnavigation">
+        <nav className="hidden lg:flex items-center gap-3 xl:gap-6" aria-label="Hauptnavigation">
           {navLinks.map((l) => (
             <Link
               key={l.to}
               to={l.to}
-              className={`text-sm font-semibold transition-colors hover:text-accent ${
+              className={`text-sm font-semibold transition-colors hover:text-accent whitespace-nowrap ${
                 pathname === l.to ? "text-accent" : "text-foreground"
               }`}
             >
@@ -46,7 +46,7 @@ const Navbar = () => {
           <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
           <a
             href={`tel:${practice.phoneFull}`}
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-3 lg:px-4 xl:px-5 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
             <Phone className="w-4 h-4" />
             {practice.phone}
