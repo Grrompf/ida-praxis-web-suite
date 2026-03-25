@@ -125,7 +125,7 @@ const Termin = () => {
             {/* Personal info */}
             <fieldset>
               <legend className="text-sm font-bold text-foreground mb-3 flex items-center gap-2">
-                <User className="w-4 h-4 text-accent" />
+                <User className="w-4 h-4 text-accent" aria-hidden="true" />
                 {t("booking.personal_info")}
               </legend>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
