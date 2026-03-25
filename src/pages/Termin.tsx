@@ -116,7 +116,7 @@ const Termin = () => {
           >
             {/* Health data notice */}
             <div className="flex items-start gap-3 bg-muted/50 border border-border rounded-lg p-3.5">
-              <ShieldAlert className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+              <ShieldAlert className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
               <p className="text-xs text-muted-foreground leading-relaxed">
                 {t("booking.health_notice")}
               </p>
