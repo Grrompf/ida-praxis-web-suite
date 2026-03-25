@@ -68,7 +68,7 @@ const Navbar = () => {
       {open && (
         <>
           <div
-            className="fixed inset-0 top-16 bg-foreground/50 z-40 lg:hidden animate-fade-in"
+            className="fixed inset-0 top-16 bg-foreground/40 backdrop-blur-sm z-40 lg:hidden animate-fade-in"
             onClick={() => setOpen(false)}
             aria-hidden="true"
           />
