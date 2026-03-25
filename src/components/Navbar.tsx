@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
 
 const LanguageSwitcher = lazy(() => import("./LanguageSwitcher"));
+const FontSizeSwitcher = lazy(() => import("./FontSizeSwitcher"));
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
