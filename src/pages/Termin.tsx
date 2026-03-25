@@ -49,14 +49,6 @@ const Termin = () => {
     if (!form.reason) fieldErrors.reason = t("booking.error_reason");
     if (!form.privacy) fieldErrors.privacy = t("booking.error_privacy");
 
-    // Check if selected date is a weekend
-    if (form.date) {
-      const day = new Date(form.date).getDay();
-      if (day === 0 || day === 6) {
-        fieldErrors.date = t("booking.error_weekend");
-      }
-    }
-
     if (Object.keys(fieldErrors).length > 0) {
       setErrors(fieldErrors);
       return;
