@@ -25,7 +25,7 @@ const Footer = () => {
                 {practice.address.street}, {practice.address.zip} {t("common.city_name")}
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 shrink-0" />
+                <Phone className="w-4 h-4 shrink-0" aria-hidden="true" />
                 <a href={`tel:${practice.phoneFull}`} className="hover:text-primary-foreground transition-colors">{practice.phone}</a>
               </li>
               <li className="flex items-center gap-2">
