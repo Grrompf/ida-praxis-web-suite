@@ -95,7 +95,7 @@ const Kontakt = () => {
                 { icon: Clock, label: t("contact.hours"), value: t("contact.hours_value") },
               ].map((item) => (
                 <div key={item.label} className="bg-card rounded-xl border p-4 flex items-start gap-3">
-                  <item.icon className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                  <item.icon className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
                   <div>
                     <p className="font-semibold text-foreground text-sm">{item.label}</p>
                     {item.href ? (
