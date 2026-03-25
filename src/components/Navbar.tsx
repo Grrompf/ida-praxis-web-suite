@@ -66,7 +66,7 @@ const Navbar = () => {
 
 
       {open && (
-        <div className="md:hidden bg-card border-t">
+        <div className="lg:hidden bg-card border-t">
           <nav className="container py-4 flex flex-col gap-3">
             {navLinks.map((l) => (
               <Link
