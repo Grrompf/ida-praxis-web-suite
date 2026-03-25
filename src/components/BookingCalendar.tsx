@@ -106,8 +106,7 @@ const BookingCalendar = ({ value, onChange, minDate, maxDate }: BookingCalendarP
   const canGoPrev = `${viewYear}-${String(viewMonth + 1).padStart(2, "0")}` > minDate.slice(0, 7) || viewMonth > new Date(minDate).getMonth() || viewYear > new Date(minDate).getFullYear();
   const canGoNext = `${viewYear}-${String(viewMonth + 1).padStart(2, "0")}` < maxDate.slice(0, 7);
 
-  // Short weekday labels (Mo Di Mi Do Fr Sa So)
-  const weekLabels = WEEKDAY_KEYS.map((k) => t(k).slice(0, 2));
+  const weekLabels = WEEKDAYS_SHORT[i18n.language] || WEEKDAYS_SHORT.de;
 
   const monthNames = [
     "Januar", "Februar", "März", "April", "Mai", "Juni",
