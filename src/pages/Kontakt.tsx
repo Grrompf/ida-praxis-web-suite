@@ -112,18 +112,21 @@ const Kontakt = () => {
                     aria-invalid={!!errors.name}
                     aria-describedby={errors.name ? "error-name" : undefined}
                   />
-                  {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
+                  {errors.name && <p id="error-name" className="text-destructive text-xs mt-1" role="alert">{errors.name}</p>}
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.email")} *</label>
+                  <label htmlFor="contact-email" className="block text-sm font-semibold text-foreground mb-1">{t("contact.email")} *</label>
                   <input
+                    id="contact-email"
                     type="email"
                     value={form.email || ""}
                     onChange={(e) => update("email", e.target.value)}
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     placeholder={t("contact.email_placeholder")}
+                    aria-invalid={!!errors.email}
+                    aria-describedby={errors.email ? "error-email" : undefined}
                   />
-                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                  {errors.email && <p id="error-email" className="text-destructive text-xs mt-1" role="alert">{errors.email}</p>}
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
