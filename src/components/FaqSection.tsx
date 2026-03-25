@@ -29,6 +29,7 @@ const FaqItem = ({ qKey }: { qKey: string }) => {
           className={`w-5 h-5 shrink-0 text-muted-foreground transition-transform duration-200 ${
             open ? "rotate-180" : ""
           }`}
+          aria-hidden="true"
         />
       </button>
       <div

@@ -21,7 +21,7 @@ const Anfahrt = () => {
           <div className="space-y-6">
             <div className="bg-card rounded-xl border p-6">
               <div className="flex items-start gap-3 mb-4">
-                <MapPin className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <MapPin className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <h3 className="font-bold text-foreground">{t("directions.address")}</h3>
                   <p className="text-muted-foreground text-sm">
@@ -32,7 +32,7 @@ const Anfahrt = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3 mb-4">
-                <Car className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <Car className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <h3 className="font-bold text-foreground">{t("directions.by_car")}</h3>
                   <p className="text-muted-foreground text-sm whitespace-pre-line">
@@ -41,7 +41,7 @@ const Anfahrt = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <Train className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <Train className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <h3 className="font-bold text-foreground">{t("directions.public_transport")}</h3>
                   <p className="text-muted-foreground text-sm">
@@ -66,7 +66,7 @@ const Anfahrt = () => {
               />
             ) : (
               <div className="text-center p-8">
-                <MapPin className="w-10 h-10 text-muted-foreground mx-auto mb-4" />
+                <MapPin className="w-10 h-10 text-muted-foreground mx-auto mb-4" aria-hidden="true" />
                 <p className="text-muted-foreground text-sm mb-4">
                   {t("directions.map_consent")}
                 </p>

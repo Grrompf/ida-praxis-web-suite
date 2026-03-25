@@ -85,7 +85,7 @@ const Termin = () => {
     return (
       <section className="py-28">
         <div className="container max-w-lg text-center">
-          <CheckCircle className="w-16 h-16 text-accent mx-auto mb-6" />
+          <CheckCircle className="w-16 h-16 text-accent mx-auto mb-6" aria-hidden="true" />
           <h1 className="text-3xl font-bold text-foreground mb-4">{t("booking.success_title")}</h1>
           <p className="text-muted-foreground">{t("booking.success_message")}</p>
         </div>
@@ -116,7 +116,7 @@ const Termin = () => {
           >
             {/* Health data notice */}
             <div className="flex items-start gap-3 bg-muted/50 border border-border rounded-lg p-3.5">
-              <ShieldAlert className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+              <ShieldAlert className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
               <p className="text-xs text-muted-foreground leading-relaxed">
                 {t("booking.health_notice")}
               </p>
@@ -125,7 +125,7 @@ const Termin = () => {
             {/* Personal info */}
             <fieldset>
               <legend className="text-sm font-bold text-foreground mb-3 flex items-center gap-2">
-                <User className="w-4 h-4 text-accent" />
+                <User className="w-4 h-4 text-accent" aria-hidden="true" />
                 {t("booking.personal_info")}
               </legend>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -184,7 +184,7 @@ const Termin = () => {
             {/* Date & Time */}
             <fieldset>
               <legend className="text-sm font-bold text-foreground mb-3 flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-accent" />
+                <Calendar className="w-4 h-4 text-accent" aria-hidden="true" />
                 {t("booking.date_time")}
               </legend>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -273,7 +273,7 @@ const Termin = () => {
 
             {/* Mailto hint */}
             <div className="flex items-start gap-3 bg-primary/5 border border-primary/20 rounded-lg p-3.5">
-              <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+              <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" aria-hidden="true" />
               <p className="text-xs text-muted-foreground leading-relaxed">
                 {t("booking.mailto_hint")}
               </p>
@@ -281,7 +281,7 @@ const Termin = () => {
 
             {/* Info box */}
             <div className="flex items-start gap-3 bg-accent/5 border border-accent/20 rounded-lg p-3.5">
-              <Clock className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+              <Clock className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
               <p className="text-xs text-muted-foreground leading-relaxed">
                 {t("booking.confirmation_note")}
               </p>
@@ -309,7 +309,7 @@ const Termin = () => {
               type="submit"
               className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:bg-accent/90 transition-colors"
             >
-              <Send className="w-4 h-4" />
+              <Send className="w-4 h-4" aria-hidden="true" />
               {t("booking.submit")}
             </button>
           </form>

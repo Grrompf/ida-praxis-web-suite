@@ -130,7 +130,7 @@ const BookingCalendar = ({ value, onChange, minDate, maxDate }: BookingCalendarP
           className="p-1.5 rounded-lg hover:bg-muted transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           aria-label="Vorheriger Monat"
         >
-          <ChevronLeft className="w-4 h-4" />
+          <ChevronLeft className="w-4 h-4" aria-hidden="true" />
         </button>
         <span className="text-sm font-bold text-foreground">
           {monthNames[viewMonth]} {viewYear}
@@ -142,7 +142,7 @@ const BookingCalendar = ({ value, onChange, minDate, maxDate }: BookingCalendarP
           className="p-1.5 rounded-lg hover:bg-muted transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           aria-label="Nächster Monat"
         >
-          <ChevronRight className="w-4 h-4" />
+          <ChevronRight className="w-4 h-4" aria-hidden="true" />
         </button>
       </div>
 

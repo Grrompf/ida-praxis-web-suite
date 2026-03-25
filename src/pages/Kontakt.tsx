@@ -67,7 +67,7 @@ const Kontakt = () => {
     return (
       <section className="py-28">
         <div className="container max-w-lg text-center">
-          <CheckCircle className="w-16 h-16 text-accent mx-auto mb-6" />
+          <CheckCircle className="w-16 h-16 text-accent mx-auto mb-6" aria-hidden="true" />
           <h1 className="text-3xl font-bold text-foreground mb-4">{t("contact.success_title")}</h1>
           <p className="text-muted-foreground">{t("contact.success_message")}</p>
         </div>
@@ -95,7 +95,7 @@ const Kontakt = () => {
                 { icon: Clock, label: t("contact.hours"), value: t("contact.hours_value") },
               ].map((item) => (
                 <div key={item.label} className="bg-card rounded-xl border p-4 flex items-start gap-3">
-                  <item.icon className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                  <item.icon className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
                   <div>
                     <p className="font-semibold text-foreground text-sm">{item.label}</p>
                     {item.href ? (
@@ -110,7 +110,7 @@ const Kontakt = () => {
 
             <form onSubmit={handleSubmit} className="lg:col-span-2 bg-card rounded-xl border p-6 md:p-8 space-y-5">
               <div className="flex items-start gap-3 bg-muted/50 border border-border rounded-lg p-3.5">
-                <ShieldAlert className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <ShieldAlert className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
                 <p className="text-xs text-muted-foreground leading-relaxed">{t("contact.health_data_notice")}</p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -189,7 +189,7 @@ const Kontakt = () => {
                 {errors.message && <p id="error-message" className="text-destructive text-xs mt-1" role="alert">{errors.message}</p>}
               </div>
               <div className="flex items-start gap-3 bg-primary/5 border border-primary/20 rounded-lg p-3.5">
-                <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" aria-hidden="true" />
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   {t("contact.mailto_hint")}
                 </p>
@@ -212,7 +212,7 @@ const Kontakt = () => {
                 type="submit"
                 className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:bg-accent/90 transition-colors"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-4 h-4" aria-hidden="true" />
                 {t("contact.send")}
               </button>
             </form>

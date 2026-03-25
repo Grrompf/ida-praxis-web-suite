@@ -34,7 +34,7 @@ const OfficeHoursSection = () => {
 
           <div className="bg-card rounded-xl border shadow-lg overflow-hidden">
             <div className="flex items-center gap-3 bg-primary px-6 py-4">
-              <Clock className="w-5 h-5 text-primary-foreground" />
+              <Clock className="w-5 h-5 text-primary-foreground" aria-hidden="true" />
               <span className="font-semibold text-primary-foreground">
                 {t("hours.label")}
               </span>

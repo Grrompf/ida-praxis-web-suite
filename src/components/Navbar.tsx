@@ -48,7 +48,7 @@ const Navbar = () => {
             href={`tel:${practice.phoneFull}`}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-3 lg:px-4 xl:px-5 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
-            <Phone className="w-4 h-4" />
+            <Phone className="w-4 h-4" aria-hidden="true" />
             {practice.phone}
           </a>
         </nav>
@@ -59,7 +59,7 @@ const Navbar = () => {
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
         >
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {open ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
         </button>
       </div>
 
@@ -94,7 +94,7 @@ const Navbar = () => {
                 href={`tel:${practice.phoneFull}`}
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4" aria-hidden="true" />
                 {practice.phone}
               </a>
             </nav>

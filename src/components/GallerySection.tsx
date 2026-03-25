@@ -91,14 +91,14 @@ const GallerySection = () => {
             className="absolute top-4 right-4 text-white/80 hover:text-white p-2"
             aria-label="Schließen"
           >
-            <X className="w-7 h-7" />
+            <X className="w-7 h-7" aria-hidden="true" />
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); prev(); }}
             className="absolute left-2 md:left-6 text-white/80 hover:text-white p-2"
             aria-label="Vorheriges Bild"
           >
-            <ChevronLeft className="w-8 h-8" />
+            <ChevronLeft className="w-8 h-8" aria-hidden="true" />
           </button>
           <img
             src={images[lightbox].src}
@@ -111,7 +111,7 @@ const GallerySection = () => {
             className="absolute right-2 md:right-6 text-white/80 hover:text-white p-2"
             aria-label="Nächstes Bild"
           >
-            <ChevronRight className="w-8 h-8" />
+            <ChevronRight className="w-8 h-8" aria-hidden="true" />
           </button>
           <div className="absolute bottom-4 text-white/70 text-sm">
             {lightbox + 1} / {images.length}

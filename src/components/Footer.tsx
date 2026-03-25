@@ -21,19 +21,19 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4">{t("footer.contact")}</h3>
             <ul className="space-y-2 text-sm text-primary-foreground">
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+                <MapPin className="w-4 h-4 mt-0.5 shrink-0" aria-hidden="true" />
                 {practice.address.street}, {practice.address.zip} {t("common.city_name")}
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4 shrink-0" />
+                <Phone className="w-4 h-4 shrink-0" aria-hidden="true" />
                 <a href={`tel:${practice.phoneFull}`} className="hover:text-primary-foreground transition-colors">{practice.phone}</a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 shrink-0" />
+                <Mail className="w-4 h-4 shrink-0" aria-hidden="true" />
                 <a href={`mailto:${practice.email}`} className="hover:text-primary-foreground transition-colors">{practice.email}</a>
               </li>
               <li className="flex items-start gap-2">
-                <Clock className="w-4 h-4 mt-0.5 shrink-0" />
+                <Clock className="w-4 h-4 mt-0.5 shrink-0" aria-hidden="true" />
                 {practice.hours}
               </li>
             </ul>
