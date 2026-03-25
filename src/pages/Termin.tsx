@@ -3,6 +3,7 @@ import { Calendar, Send, CheckCircle, ShieldAlert, Clock, User, Mail, Phone } fr
 import { Toaster, toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
+import BookingCalendar from "@/components/BookingCalendar";
 
 type BookingForm = {
   name?: string;
@@ -46,14 +47,6 @@ const Termin = () => {
     if (!form.timeSlot) fieldErrors.timeSlot = t("booking.error_time");
     if (!form.reason) fieldErrors.reason = t("booking.error_reason");
     if (!form.privacy) fieldErrors.privacy = t("booking.error_privacy");
-
-    // Check if selected date is a weekend
-    if (form.date) {
-      const day = new Date(form.date).getDay();
-      if (day === 0 || day === 6) {
-        fieldErrors.date = t("booking.error_weekend");
-      }
-    }
 
     if (Object.keys(fieldErrors).length > 0) {
       setErrors(fieldErrors);
@@ -179,20 +172,15 @@ const Termin = () => {
                 {t("booking.date_time")}
               </legend>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="booking-date" className="block text-sm font-semibold text-foreground mb-1">
+              <div className="sm:col-span-2">
+                  <label className="block text-sm font-semibold text-foreground mb-2">
                     {t("booking.preferred_date")} *
                   </label>
-                  <input
-                    id="booking-date"
-                    type="date"
-                    value={form.date || ""}
-                    onChange={(e) => update("date", e.target.value)}
-                    min={minDate}
-                    max={maxDateStr}
-                    className={inputClass}
-                    aria-invalid={!!errors.date}
-                    aria-describedby={errors.date ? "err-date" : undefined}
+                  <BookingCalendar
+                    value={form.date}
+                    onChange={(d) => update("date", d)}
+                    minDate={minDate}
+                    maxDate={maxDateStr}
                   />
                   {errors.date && (
                     <p id="err-date" className="text-destructive text-xs mt-1" role="alert">{errors.date}</p>

@@ -190,7 +190,9 @@
     "error_time": "Prošu wubjerće časowy wotrězk.",
     "error_reason": "Prošu wubjerće přičinu.",
     "error_privacy": "Prošu přihłosujće škit datow.",
-    "error_weekend": "Prošu wubjerće dźěłowy dźeń (Pó–Pj)."
+    "error_weekend": "Prošu wubjerće dźěłowy dźeń (Pó–Pj).",
+    "legend_selected": "Wubrane",
+    "legend_closed": "Začinjene"
   },
   "imprint": {
     "title": "Impresum",

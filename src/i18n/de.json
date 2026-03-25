@@ -190,7 +190,9 @@
     "error_time": "Bitte wählen Sie ein Zeitfenster.",
     "error_reason": "Bitte wählen Sie einen Anlass.",
     "error_privacy": "Bitte stimmen Sie der Datenschutzerklärung zu.",
-    "error_weekend": "Bitte wählen Sie einen Werktag (Mo–Fr)."
+    "error_weekend": "Bitte wählen Sie einen Werktag (Mo–Fr).",
+    "legend_selected": "Ausgewählt",
+    "legend_closed": "Geschlossen"
   },
   "imprint": {
     "title": "Impressum",
