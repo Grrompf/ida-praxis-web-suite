@@ -5,6 +5,7 @@ const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const TeamSection = lazy(() => import("@/components/TeamSection"));
 const OfficeHoursSection = lazy(() => import("@/components/OfficeHoursSection"));
 const GallerySection = lazy(() => import("@/components/GallerySection"));
+const FaqSection = lazy(() => import("@/components/FaqSection"));
 const ContactBar = lazy(() => import("@/components/ContactBar"));
 
 const Index = () => (
