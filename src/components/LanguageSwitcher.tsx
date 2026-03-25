@@ -31,7 +31,7 @@ const LanguageSwitcher = () => {
         aria-haspopup="listbox"
       >
         <CurrentFlag />
-        <ChevronDown className={`w-3.5 h-3.5 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />
+        <ChevronDown className={`w-3.5 h-3.5 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} aria-hidden="true" />
       </button>
 
       {open && (

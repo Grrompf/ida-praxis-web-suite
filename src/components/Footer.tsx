@@ -33,7 +33,7 @@ const Footer = () => {
                 <a href={`mailto:${practice.email}`} className="hover:text-primary-foreground transition-colors">{practice.email}</a>
               </li>
               <li className="flex items-start gap-2">
-                <Clock className="w-4 h-4 mt-0.5 shrink-0" />
+                <Clock className="w-4 h-4 mt-0.5 shrink-0" aria-hidden="true" />
                 {practice.hours}
               </li>
             </ul>

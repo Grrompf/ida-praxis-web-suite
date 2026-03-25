@@ -94,7 +94,7 @@ const Navbar = () => {
                 href={`tel:${practice.phoneFull}`}
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"
               >
-                <Phone className="w-4 h-4" />
+                <Phone className="w-4 h-4" aria-hidden="true" />
                 {practice.phone}
               </a>
             </nav>

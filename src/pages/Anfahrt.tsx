@@ -66,7 +66,7 @@ const Anfahrt = () => {
               />
             ) : (
               <div className="text-center p-8">
-                <MapPin className="w-10 h-10 text-muted-foreground mx-auto mb-4" />
+                <MapPin className="w-10 h-10 text-muted-foreground mx-auto mb-4" aria-hidden="true" />
                 <p className="text-muted-foreground text-sm mb-4">
                   {t("directions.map_consent")}
                 </p>

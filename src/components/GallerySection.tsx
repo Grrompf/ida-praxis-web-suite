@@ -111,7 +111,7 @@ const GallerySection = () => {
             className="absolute right-2 md:right-6 text-white/80 hover:text-white p-2"
             aria-label="Nächstes Bild"
           >
-            <ChevronRight className="w-8 h-8" />
+            <ChevronRight className="w-8 h-8" aria-hidden="true" />
           </button>
           <div className="absolute bottom-4 text-white/70 text-sm">
             {lightbox + 1} / {images.length}

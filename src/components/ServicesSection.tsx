@@ -69,7 +69,7 @@ const ServicesSection = () => {
             <RevealCard key={s.titleKey} delay={i * 100}>
               <div className="bg-card rounded-xl p-6 border hover:shadow-lg hover:border-accent/30 transition-all duration-300 group h-full">
                 <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center mb-4 group-hover:bg-accent/20 transition-colors">
-                  <s.icon className="w-6 h-6 text-accent" />
+                  <s.icon className="w-6 h-6 text-accent" aria-hidden="true" />
                 </div>
                 <h3 className="font-bold text-foreground mb-2">{t(s.titleKey)}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{t(s.descKey)}</p>

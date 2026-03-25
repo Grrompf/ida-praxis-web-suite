@@ -309,7 +309,7 @@ const Termin = () => {
               type="submit"
               className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:bg-accent/90 transition-colors"
             >
-              <Send className="w-4 h-4" />
+              <Send className="w-4 h-4" aria-hidden="true" />
               {t("booking.submit")}
             </button>
           </form>

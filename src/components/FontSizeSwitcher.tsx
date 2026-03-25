@@ -35,7 +35,7 @@ const FontSizeSwitcher = () => {
         className="p-1.5 rounded border border-border bg-card hover:bg-muted transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
         aria-label="Schrift vergrößern"
       >
-        <Plus className="w-3.5 h-3.5" />
+        <Plus className="w-3.5 h-3.5" aria-hidden="true" />
       </button>
     </div>
   );
