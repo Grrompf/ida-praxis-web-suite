@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-card border-b shadow-sm" role="banner" style={{ fontSize: '16px' }}>
       {/* Single-row layout: mobile + lg+ */}
-      <div className="container flex items-center justify-between h-16 md:hidden lg:flex lg:h-20">
+      <div className="container flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2 mr-4">
           <span className="text-xl lg:text-2xl font-bold text-primary tracking-tight">IDA</span>
           <span className="text-xs lg:text-sm text-muted-foreground font-medium hidden sm:block lg:whitespace-nowrap">
@@ -54,7 +54,7 @@ const Navbar = () => {
         </nav>
 
         <button
-          className="md:hidden p-2 text-foreground"
+          className="lg:hidden p-2 text-foreground"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
@@ -63,49 +63,10 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Two-row layout: tablet (md–lg) */}
-      <div className="hidden md:flex lg:hidden container items-center gap-6 py-2">
-        {/* Logo spanning both rows */}
-        <Link to="/" className="flex items-center gap-2 mr-4 shrink-0 self-center">
-          <span className="text-2xl font-bold text-primary tracking-tight">IDA</span>
-          <span className="text-sm text-muted-foreground font-medium">
-            Internistisch-Diabetologische Arztpraxis
-          </span>
-        </Link>
 
-        {/* Right side: two rows */}
-        <div className="flex flex-col items-end gap-1.5 ml-auto">
-          {/* Row 1: Nav links */}
-          <nav className="flex items-center gap-5" aria-label="Hauptnavigation">
-            {navLinks.map((l) => (
-              <Link
-                key={l.to}
-                to={l.to}
-                className={`text-sm font-semibold transition-colors hover:text-accent whitespace-nowrap ${
-                  pathname === l.to ? "text-accent" : "text-foreground"
-                }`}
-              >
-                {l.label}
-              </Link>
-            ))}
-          </nav>
-          {/* Row 2: Utilities */}
-          <div className="flex items-center gap-3">
-            <Suspense fallback={<div className="w-20" />}><LanguageSwitcher /></Suspense>
-            <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
-            <a
-              href={`tel:${practice.phoneFull}`}
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-1.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              {practice.phone}
-            </a>
-          </div>
-        </div>
-      </div>
 
       {open && (
-        <div className="md:hidden bg-card border-t">
+        <div className="lg:hidden bg-card border-t">
           <nav className="container py-4 flex flex-col gap-3">
             {navLinks.map((l) => (
               <Link
