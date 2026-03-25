@@ -7,6 +7,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 const HeroSection = () => {
   const { t } = useTranslation();
   const isMobile = useIsMobile();
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
     <section className="relative overflow-hidden" aria-label="Willkommen">
