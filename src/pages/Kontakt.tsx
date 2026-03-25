@@ -101,13 +101,16 @@ const Kontakt = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.name")} *</label>
+                  <label htmlFor="contact-name" className="block text-sm font-semibold text-foreground mb-1">{t("contact.name")} *</label>
                   <input
+                    id="contact-name"
                     type="text"
                     value={form.name || ""}
                     onChange={(e) => update("name", e.target.value)}
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     placeholder={t("contact.name_placeholder")}
+                    aria-invalid={!!errors.name}
+                    aria-describedby={errors.name ? "error-name" : undefined}
                   />
                   {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
                 </div>
