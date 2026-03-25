@@ -27,7 +27,7 @@ const ContactBar = () => {
               </Link>
             )}
             <Link to="/kontakt" className="inline-flex items-center gap-2 text-accent-foreground border-2 border-accent-foreground/40 px-5 py-3 rounded-lg font-semibold text-sm hover:bg-accent-foreground/10 transition-colors">
-              <Mail className="w-4 h-4" /> {t("contact_bar.message")}
+              <Mail className="w-4 h-4" aria-hidden="true" /> {t("contact_bar.message")}
             </Link>
             <Link to="/anfahrt" className="inline-flex items-center gap-2 text-accent-foreground border-2 border-accent-foreground/40 px-5 py-3 rounded-lg font-semibold text-sm hover:bg-accent-foreground/10 transition-colors">
               <MapPin className="w-4 h-4" /> {t("contact_bar.directions")}
