@@ -7,6 +7,7 @@ import CookieConsent from "./components/CookieConsent";
 
 const Footer = lazy(() => import("./components/Footer"));
 const Anfahrt = lazy(() => import("./pages/Anfahrt"));
+const Termin = lazy(() => import("./pages/Termin"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const Datenschutz = lazy(() => import("./pages/Datenschutz"));
@@ -35,6 +36,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/anfahrt" element={<Anfahrt />} />
+            <Route path="/termin" element={<Termin />} />
             <Route path="/kontakt" element={<Kontakt />} />
             <Route path="/impressum" element={<Impressum />} />
             <Route path="/datenschutz" element={<Datenschutz />} />

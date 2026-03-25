@@ -14,6 +14,7 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "/", label: t("nav.home") },
+    { to: "/termin", label: t("nav.booking") },
     { to: "/anfahrt", label: t("nav.directions") },
     { to: "/kontakt", label: t("nav.contact") },
   ];
