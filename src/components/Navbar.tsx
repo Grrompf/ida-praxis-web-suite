@@ -21,7 +21,8 @@ const Navbar = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-card border-b shadow-sm" role="banner" style={{ fontSize: '16px' }}>
-      <div className="container flex items-center justify-between h-16 md:h-20">
+      {/* Row 1: Logo + Nav links (+ utilities on lg+) */}
+      <div className="container flex items-center justify-between h-16 md:h-14">
         <Link to="/" className="flex items-center gap-2 mr-4">
           <span className="text-xl md:text-2xl font-bold text-primary tracking-tight">IDA</span>
           <span className="text-xs md:text-sm text-muted-foreground font-medium hidden sm:block lg:whitespace-nowrap">
@@ -41,15 +42,18 @@ const Navbar = () => {
               {l.label}
             </Link>
           ))}
-          <Suspense fallback={<div className="w-20" />}><LanguageSwitcher /></Suspense>
-          <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
-          <a
-            href={`tel:${practice.phoneFull}`}
-            className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
-          >
-            <Phone className="w-4 h-4" />
-            {practice.phone}
-          </a>
+          {/* Utilities inline on lg+ */}
+          <div className="hidden lg:flex items-center gap-4">
+            <Suspense fallback={<div className="w-20" />}><LanguageSwitcher /></Suspense>
+            <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
+            <a
+              href={`tel:${practice.phoneFull}`}
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
+            >
+              <Phone className="w-4 h-4" />
+              {practice.phone}
+            </a>
+          </div>
         </nav>
 
         <button
@@ -60,6 +64,19 @@ const Navbar = () => {
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
+      </div>
+
+      {/* Row 2: Utilities on md–lg (tablet) */}
+      <div className="hidden md:flex lg:hidden items-center justify-end gap-4 container pb-2">
+        <Suspense fallback={<div className="w-20" />}><LanguageSwitcher /></Suspense>
+        <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
+        <a
+          href={`tel:${practice.phoneFull}`}
+          className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
+        >
+          <Phone className="w-4 h-4" />
+          {practice.phone}
+        </a>
       </div>
 
       {open && (
