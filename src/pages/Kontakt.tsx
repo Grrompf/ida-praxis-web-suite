@@ -157,7 +157,7 @@ const Kontakt = () => {
                     <option>{t("contact.subject_prescription")}</option>
                     <option>{t("contact.subject_general")}</option>
                   </select>
-                  {errors.subject && <p className="text-destructive text-xs mt-1">{errors.subject}</p>}
+                  {errors.subject && <p id="error-subject" className="text-destructive text-xs mt-1" role="alert">{errors.subject}</p>}
                 </div>
               </div>
               <div>
