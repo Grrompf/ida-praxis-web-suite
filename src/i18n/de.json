@@ -138,6 +138,7 @@
     "success_title": "Vielen Dank!",
     "success_message": "Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen.",
     "toast_success": "Ihre Nachricht wurde gesendet!",
+    "mailto_hint": "Nach dem Absenden öffnet sich Ihr E-Mail-Programm mit den vorausgefüllten Daten. Bitte senden Sie die E-Mail ab, um die Anfrage zu übermitteln.",
     "error_name": "Bitte geben Sie Ihren Namen ein.",
     "error_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
     "error_subject": "Bitte wählen Sie einen Betreff.",

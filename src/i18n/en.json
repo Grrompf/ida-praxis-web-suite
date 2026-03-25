@@ -138,6 +138,7 @@
     "success_title": "Thank you!",
     "success_message": "Your message has been sent successfully. We will get back to you as soon as possible.",
     "toast_success": "Your message has been sent!",
+    "mailto_hint": "After submitting, your email program will open with the pre-filled data. Please send the email to complete your request.",
     "error_name": "Please enter your name.",
     "error_email": "Please enter a valid email address.",
     "error_subject": "Please select a subject.",
