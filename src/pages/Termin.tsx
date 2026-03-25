@@ -184,7 +184,7 @@ const Termin = () => {
             {/* Date & Time */}
             <fieldset>
               <legend className="text-sm font-bold text-foreground mb-3 flex items-center gap-2">
-                <Calendar className="w-4 h-4 text-accent" />
+                <Calendar className="w-4 h-4 text-accent" aria-hidden="true" />
                 {t("booking.date_time")}
               </legend>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
