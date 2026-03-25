@@ -56,7 +56,7 @@ const WEEKDAYS_SHORT: Record<string, string[]> = {
 };
 
 const BookingCalendar = ({ value, onChange, minDate, maxDate }: BookingCalendarProps) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const today = new Date();
   const [viewYear, setViewYear] = useState(today.getFullYear());
   const [viewMonth, setViewMonth] = useState(today.getMonth());
