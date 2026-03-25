@@ -7,6 +7,7 @@ import CookieConsent from "./components/CookieConsent";
 
 const Footer = lazy(() => import("./components/Footer"));
 const Anfahrt = lazy(() => import("./pages/Anfahrt"));
+const Termin = lazy(() => import("./pages/Termin"));
 const Kontakt = lazy(() => import("./pages/Kontakt"));
 const Impressum = lazy(() => import("./pages/Impressum"));
 const Datenschutz = lazy(() => import("./pages/Datenschutz"));
