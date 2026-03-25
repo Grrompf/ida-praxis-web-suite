@@ -180,6 +180,7 @@
     "message_placeholder": "Besondere Wünsche oder Hinweise…",
     "health_notice": "Bitte übermitteln Sie über dieses Formular keine Gesundheitsdaten. Besprechen Sie medizinische Anliegen persönlich oder telefonisch.",
     "confirmation_note": "Dies ist eine unverbindliche Terminanfrage. Wir bestätigen Ihren Termin innerhalb von 1–2 Werktagen telefonisch oder per E-Mail.",
+    "mailto_hint": "Nach dem Absenden öffnet sich Ihr E-Mail-Programm mit den vorausgefüllten Daten. Bitte senden Sie die E-Mail ab, um die Anfrage zu übermitteln.",
     "submit": "Termin anfragen",
     "success_title": "Vielen Dank!",
     "success_message": "Ihre Terminanfrage wurde erfolgreich gesendet. Wir melden uns schnellstmöglich bei Ihnen zur Bestätigung.",

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Calendar, Send, CheckCircle, ShieldAlert, Clock, User, Mail, Phone } from "lucide-react";
+import { Calendar, Send, CheckCircle, ShieldAlert, Clock, User, Mail, Phone, ExternalLink } from "lucide-react";
 import { Toaster, toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
@@ -269,6 +269,14 @@ const Termin = () => {
                 className={`${inputClass} resize-none`}
                 placeholder={t("booking.message_placeholder")}
               />
+            </div>
+
+            {/* Mailto hint */}
+            <div className="flex items-start gap-3 bg-primary/5 border border-primary/20 rounded-lg p-3.5">
+              <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                {t("booking.mailto_hint")}
+              </p>
             </div>
 
             {/* Info box */}
