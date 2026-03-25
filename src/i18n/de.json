@@ -50,6 +50,15 @@
     "friday": "Freitag",
     "note": "Und nach Vereinbarung. Bitte vereinbaren Sie telefonisch einen Termin."
   },
+  "gallery": {
+    "label": "Unsere Praxis",
+    "title": "Einblicke in unsere Räumlichkeiten",
+    "exterior": "Praxis-Außenansicht",
+    "reception": "Empfangsbereich",
+    "waiting": "Wartezimmer",
+    "treatment": "Behandlungszimmer",
+    "lab": "Diagnostiklabor"
+  },
   "contact_bar": {
     "title": "Wir sind für Sie da.",
     "subtitle": "Vereinbaren Sie noch heute Ihren Termin.",
