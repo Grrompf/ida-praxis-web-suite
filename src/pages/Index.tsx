@@ -19,6 +19,9 @@ const Index = () => (
     <Suspense fallback={<div className="min-h-[200px]" />}>
       <OfficeHoursSection />
     </Suspense>
+    <Suspense fallback={<div className="min-h-[300px]" />}>
+      <GallerySection />
+    </Suspense>
     <Suspense fallback={<div className="min-h-[200px]" />}>
       <ContactBar />
     </Suspense>
