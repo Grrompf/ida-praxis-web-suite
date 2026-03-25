@@ -33,10 +33,11 @@ const TeamSection = () => {
           {team.map((m) => (
             <div key={m.name} className="bg-background rounded-xl overflow-hidden shadow-lg border">
               <div className="aspect-[4/3] overflow-hidden">
-                <img
+                <SkeletonImage
                   src={m.image}
                   alt={`Portrait ${m.name}`}
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  skeletonClass="w-full h-full"
                   width={400}
                   height={300}
                   loading="lazy"
