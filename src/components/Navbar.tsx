@@ -41,6 +41,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Suspense fallback={<div className="w-20" />}><LanguageSwitcher /></Suspense>
+          <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
           <a
             href={`tel:${practice.phoneFull}`}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
