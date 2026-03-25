@@ -50,6 +50,15 @@
     "osorgina_role": "Specjalistka medycyny wewnętrznej",
     "osorgina_desc": "Zaangażowana internistka ze szczególnym naciskiem na profilaktykę sercowo-naczyniową i opiekę skoncentrowaną na pacjencie."
   },
+  "gallery": {
+    "label": "Nasza praktyka",
+    "title": "Zaglądnij do naszych pomieszczeń",
+    "exterior": "Widok zewnętrzny",
+    "reception": "Recepcja",
+    "waiting": "Poczekalnia",
+    "treatment": "Gabinet lekarski",
+    "lab": "Laboratorium diagnostyczne"
+  },
   "contact_bar": {
     "title": "Jesteśmy tu dla Ciebie.",
     "subtitle": "Umów się na wizytę już dziś.",

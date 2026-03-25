@@ -50,6 +50,15 @@
     "osorgina_role": "Fachowa lěkarka za nutřkownu medicinu",
     "osorgina_desc": "Angažowana internistka z wosebitym fokusom na kardiovaskulanu prewenciju a pacientam blízke zastaranje."
   },
+  "gallery": {
+    "label": "Naša praksa",
+    "title": "Dohlady do našich rumnosćow",
+    "exterior": "Wonkowny napohlad praksy",
+    "reception": "Přijimowarnja",
+    "waiting": "Čakanski rum",
+    "treatment": "Wobjednaski rum",
+    "lab": "Diagnostiski labor"
+  },
   "contact_bar": {
     "title": "Smy za Was tu.",
     "subtitle": "Dojednajće sej hišće dźensa Waš termin.",
