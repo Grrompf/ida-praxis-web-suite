@@ -40,6 +40,20 @@ const Kontakt = () => {
       return;
     }
     setErrors({});
+
+    const subject = encodeURIComponent(`Kontaktanfrage: ${form.subject}`);
+    const body = encodeURIComponent(
+      `Kontaktanfrage\n` +
+      `──────────────────\n` +
+      `Name: ${form.name}\n` +
+      `E-Mail: ${form.email}\n` +
+      `Telefon: ${form.phone || "–"}\n` +
+      `Betreff: ${form.subject}\n` +
+      `Nachricht:\n${form.message}\n` +
+      `──────────────────`
+    );
+
+    window.location.href = `mailto:${practice.email}?subject=${subject}&body=${body}`;
     setSubmitted(true);
     toast.success(t("contact.toast_success"));
   };
