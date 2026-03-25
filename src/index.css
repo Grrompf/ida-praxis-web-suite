@@ -1,5 +1,9 @@
 /* Montserrat loaded via index.html as non-render-blocking */
 
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
