@@ -81,6 +81,7 @@ const BookingCalendar = ({ value, onChange, minDate, maxDate }: BookingCalendarP
     const dow = d.getDay();
     if (dow === 0 || dow === 6) return true; // weekend
     if (holidays.has(iso)) return true;
+    if ((practice.closedDays as readonly string[]).includes(iso)) return true;
     if (iso < minDate || iso > maxDate) return true;
     return false;
   };
