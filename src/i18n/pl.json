@@ -180,6 +180,7 @@
     "message_placeholder": "Specjalne życzenia lub uwagi…",
     "health_notice": "Prosimy nie przesyłać danych zdrowotnych za pośrednictwem tego formularza. Sprawy medyczne prosimy omawiać osobiście lub telefonicznie.",
     "confirmation_note": "To jest niezobowiązujące zapytanie o termin. Potwierdzimy Twój termin w ciągu 1–2 dni roboczych telefonicznie lub mailowo.",
+    "mailto_hint": "Po wysłaniu otworzy się Twój program pocztowy z wypełnionymi danymi. Proszę wysłać e-mail, aby przesłać zapytanie.",
     "submit": "Zapytaj o termin",
     "success_title": "Dziękujemy!",
     "success_message": "Twoje zapytanie o termin zostało wysłane pomyślnie. Skontaktujemy się jak najszybciej w celu potwierdzenia.",

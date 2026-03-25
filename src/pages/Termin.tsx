@@ -271,6 +271,14 @@ const Termin = () => {
               />
             </div>
 
+            {/* Mailto hint */}
+            <div className="flex items-start gap-3 bg-primary/5 border border-primary/20 rounded-lg p-3.5">
+              <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+              <p className="text-xs text-muted-foreground leading-relaxed">
+                {t("booking.mailto_hint")}
+              </p>
+            </div>
+
             {/* Info box */}
             <div className="flex items-start gap-3 bg-accent/5 border border-accent/20 rounded-lg p-3.5">
               <Clock className="w-5 h-5 text-accent mt-0.5 shrink-0" />
