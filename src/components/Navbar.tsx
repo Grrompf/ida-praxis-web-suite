@@ -22,7 +22,7 @@ const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 bg-card border-b shadow-sm" role="banner" style={{ fontSize: '16px' }}>
       {/* Single-row layout: mobile + lg+ */}
-      <div className="container flex items-center justify-between h-16 md:hidden lg:flex lg:h-20">
+      <div className="container flex items-center justify-between h-16 lg:h-20">
         <Link to="/" className="flex items-center gap-2 mr-4">
           <span className="text-xl lg:text-2xl font-bold text-primary tracking-tight">IDA</span>
           <span className="text-xs lg:text-sm text-muted-foreground font-medium hidden sm:block lg:whitespace-nowrap">
@@ -54,7 +54,7 @@ const Navbar = () => {
         </nav>
 
         <button
-          className="md:hidden p-2 text-foreground"
+          className="lg:hidden p-2 text-foreground"
           onClick={() => setOpen(!open)}
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
