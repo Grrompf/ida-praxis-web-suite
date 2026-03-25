@@ -9,25 +9,8 @@ const FontSizeSwitcher = lazy(() => import("./FontSizeSwitcher"));
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [visible, setVisible] = useState(false);
-  const menuRef = useRef<HTMLDivElement>(null);
   const { pathname } = useLocation();
   const { t } = useTranslation();
-
-  // Animate open/close
-  useEffect(() => {
-    if (open) {
-      setVisible(true);
-    } else if (visible) {
-      const el = menuRef.current;
-      if (el) {
-        const onEnd = () => { setVisible(false); el.removeEventListener("animationend", onEnd); };
-        el.addEventListener("animationend", onEnd);
-        return () => el.removeEventListener("animationend", onEnd);
-      }
-      setVisible(false);
-    }
-  }, [open]);
 
   const navLinks = [
     { to: "/", label: t("nav.home") },
