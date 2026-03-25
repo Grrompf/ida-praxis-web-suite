@@ -65,10 +65,9 @@ const Navbar = () => {
 
 
 
-      {visible && (
+      {open && (
         <div
-          ref={menuRef}
-          className={`lg:hidden bg-card border-t overflow-hidden ${open ? "animate-accordion-down" : "animate-accordion-up"}`}
+          className="lg:hidden bg-card border-t overflow-hidden animate-fade-in"
         >
           <nav className="container py-4 flex flex-col gap-3">
             {navLinks.map((l) => (
