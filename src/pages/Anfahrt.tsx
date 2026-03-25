@@ -32,7 +32,7 @@ const Anfahrt = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3 mb-4">
-                <Car className="w-5 h-5 text-accent mt-0.5 shrink-0" />
+                <Car className="w-5 h-5 text-accent mt-0.5 shrink-0" aria-hidden="true" />
                 <div>
                   <h3 className="font-bold text-foreground">{t("directions.by_car")}</h3>
                   <p className="text-muted-foreground text-sm whitespace-pre-line">
