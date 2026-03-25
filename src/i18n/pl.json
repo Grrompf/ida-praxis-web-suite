@@ -190,7 +190,9 @@
     "error_time": "Proszę wybrać przedział czasowy.",
     "error_reason": "Proszę wybrać powód wizyty.",
     "error_privacy": "Proszę zaakceptować politykę prywatności.",
-    "error_weekend": "Proszę wybrać dzień roboczy (Pon–Pt)."
+    "error_weekend": "Proszę wybrać dzień roboczy (Pon–Pt).",
+    "legend_selected": "Wybrany",
+    "legend_closed": "Zamknięte"
   },
   "imprint": {
     "title": "Nota prawna",

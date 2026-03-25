@@ -190,7 +190,9 @@
     "error_time": "Please select a time slot.",
     "error_reason": "Please select a reason.",
     "error_privacy": "Please agree to the privacy policy.",
-    "error_weekend": "Please select a weekday (Mon–Fri)."
+    "error_weekend": "Please select a weekday (Mon–Fri).",
+    "legend_selected": "Selected",
+    "legend_closed": "Closed"
   },
   "imprint": {
     "title": "Legal Notice",
