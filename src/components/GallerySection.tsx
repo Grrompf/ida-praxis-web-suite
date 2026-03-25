@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import SkeletonImage from "./SkeletonImage";
 
 const images = [
   { src: "/gallery/aussen.webp", key: "exterior" },
@@ -55,7 +56,7 @@ const GallerySection = () => {
               }`}
               aria-label={t(`gallery.${img.key}`)}
             >
-              <img
+              <SkeletonImage
                 src={img.src}
                 alt={t(`gallery.${img.key}`)}
                 loading="lazy"
@@ -64,6 +65,7 @@ const GallerySection = () => {
                 className={`w-full object-cover transition-transform duration-300 group-hover:scale-105 ${
                   i === 0 ? "h-48 md:h-full" : "h-40 md:h-56"
                 }`}
+                skeletonClass="w-full h-full"
               />
               <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors flex items-end p-3">
                 <span className="text-sm font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity drop-shadow-lg">
