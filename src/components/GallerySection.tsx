@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "/gallery/aussen.jpg", key: "exterior" },
-  { src: "/gallery/empfang.jpg", key: "reception" },
-  { src: "/gallery/wartezimmer.jpg", key: "waiting" },
-  { src: "/gallery/behandlung.jpg", key: "treatment" },
-  { src: "/gallery/labor.jpg", key: "lab" },
+  { src: "/gallery/aussen.webp", key: "exterior" },
+  { src: "/gallery/empfang.webp", key: "reception" },
+  { src: "/gallery/wartezimmer.webp", key: "waiting" },
+  { src: "/gallery/behandlung.webp", key: "treatment" },
+  { src: "/gallery/labor.webp", key: "lab" },
 ] as const;
 
 const GallerySection = () => {
