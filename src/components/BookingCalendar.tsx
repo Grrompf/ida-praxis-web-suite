@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { practice } from "@/config/practice";
 
 // German public holidays (Saxony) — fixed + Easter-based
 function getHolidays(year: number): Set<string> {
