@@ -59,6 +59,22 @@
     "treatment": "Behandlungszimmer",
     "lab": "Diagnostiklabor"
   },
+  "faq": {
+    "label": "Häufige Fragen",
+    "title": "Gut zu wissen",
+    "first_visit_q": "Was muss ich zum Erstbesuch mitbringen?",
+    "first_visit_a": "Bitte bringen Sie Ihre Versichertenkarte, einen Überweisungsschein (falls vorhanden), aktuelle Medikamentenliste und relevante Vorbefunde mit.",
+    "parking_q": "Gibt es Parkplätze vor der Praxis?",
+    "parking_a": "Ja, direkt vor der Praxis stehen kostenlose Parkplätze zur Verfügung. Barrierefreie Stellplätze sind ebenfalls vorhanden.",
+    "insurance_q": "Welche Versicherungen werden akzeptiert?",
+    "insurance_a": "Wir behandeln Patienten aller gesetzlichen und privaten Krankenversicherungen. Bitte bringen Sie Ihre Versichertenkarte zu jedem Besuch mit.",
+    "prescription_q": "Wie kann ich Rezepte nachbestellen?",
+    "prescription_a": "Rezepte können Sie telefonisch, per E-Mail oder über unser Kontaktformular bestellen. Bitte planen Sie 2 Werktage Vorlaufzeit ein. Das Rezept liegt dann zur Abholung bereit.",
+    "appointment_q": "Wie vereinbare ich einen Termin?",
+    "appointment_a": "Termine können Sie telefonisch während unserer Sprechzeiten oder über unser Kontaktformular vereinbaren. In Notfällen kommen Sie bitte direkt in die Praxis.",
+    "documents_q": "Welche Unterlagen benötige ich als Diabetiker?",
+    "documents_a": "Bitte bringen Sie Ihr Blutzuckertagebuch, Ihren Diabetikerpass, eine aktuelle Medikamentenliste sowie ggf. Ihren Insulinpumpenausweis mit."
+  },
   "contact_bar": {
     "title": "Wir sind für Sie da.",
     "subtitle": "Vereinbaren Sie noch heute Ihren Termin.",

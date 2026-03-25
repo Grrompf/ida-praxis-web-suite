@@ -59,6 +59,22 @@
     "treatment": "Gabinet lekarski",
     "lab": "Laboratorium diagnostyczne"
   },
+  "faq": {
+    "label": "Często zadawane pytania",
+    "title": "Warto wiedzieć",
+    "first_visit_q": "Co powinienem zabrać na pierwszą wizytę?",
+    "first_visit_a": "Prosimy o zabranie karty ubezpieczenia zdrowotnego, skierowania (jeśli dostępne), aktualnej listy leków oraz odpowiedniej dokumentacji medycznej.",
+    "parking_q": "Czy dostępny jest parking?",
+    "parking_a": "Tak, bezpośrednio przed praktyką dostępne są bezpłatne miejsca parkingowe. Dostępne są również miejsca dla osób niepełnosprawnych.",
+    "insurance_q": "Jakie ubezpieczenia są akceptowane?",
+    "insurance_a": "Przyjmujemy pacjentów ze wszystkimi ustawowymi i prywatnymi ubezpieczeniami zdrowotnymi. Prosimy o zabranie karty ubezpieczenia na każdą wizytę.",
+    "prescription_q": "Jak mogę zamówić receptę?",
+    "prescription_a": "Recepty można zamawiać telefonicznie, mailowo lub przez nasz formularz kontaktowy. Prosimy o 2 dni robocze wyprzedzenia. Recepta będzie gotowa do odbioru.",
+    "appointment_q": "Jak umówić się na wizytę?",
+    "appointment_a": "Wizyty można umawiać telefonicznie w godzinach przyjęć lub przez nasz formularz kontaktowy. W nagłych wypadkach prosimy o bezpośrednie przyjście do praktyki.",
+    "documents_q": "Jakie dokumenty potrzebuję jako diabetyk?",
+    "documents_a": "Prosimy o zabranie dzienniczka poziomu cukru we krwi, paszportu diabetyka, aktualnej listy leków oraz ewentualnie legitymacji pompy insulinowej."
+  },
   "contact_bar": {
     "title": "Jesteśmy tu dla Ciebie.",
     "subtitle": "Umów się na wizytę już dziś.",
