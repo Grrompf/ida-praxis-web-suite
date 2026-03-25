@@ -59,6 +59,22 @@
     "treatment": "Treatment room",
     "lab": "Diagnostics lab"
   },
+  "faq": {
+    "label": "FAQ",
+    "title": "Good to Know",
+    "first_visit_q": "What should I bring to my first visit?",
+    "first_visit_a": "Please bring your health insurance card, a referral (if available), your current medication list, and any relevant medical records.",
+    "parking_q": "Is there parking available?",
+    "parking_a": "Yes, free parking is available directly in front of the practice. Accessible parking spaces are also provided.",
+    "insurance_q": "Which insurances are accepted?",
+    "insurance_a": "We treat patients with all statutory and private health insurances. Please bring your insurance card to every visit.",
+    "prescription_q": "How can I reorder prescriptions?",
+    "prescription_a": "Prescriptions can be ordered by phone, email, or via our contact form. Please allow 2 working days. The prescription will be ready for pick-up.",
+    "appointment_q": "How do I schedule an appointment?",
+    "appointment_a": "Appointments can be made by phone during office hours or via our contact form. In emergencies, please come directly to the practice.",
+    "documents_q": "What documents do I need as a diabetic?",
+    "documents_a": "Please bring your blood sugar diary, diabetes passport, current medication list, and your insulin pump ID if applicable."
+  },
   "contact_bar": {
     "title": "We are here for you.",
     "subtitle": "Schedule your appointment today.",

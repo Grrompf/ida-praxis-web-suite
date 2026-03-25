@@ -59,6 +59,22 @@
     "treatment": "Wobjednaski rum",
     "lab": "Diagnostiski labor"
   },
+  "faq": {
+    "label": "Časte prašenja",
+    "title": "Derje wědźeć",
+    "first_visit_q": "Što dyrbju k prěnjemu wopytej sobu přinjesć?",
+    "first_visit_a": "Prošu přinjesće Wašu zawěsćensku kartku, přepokaz (jeli k dispoziciji), aktualnu lisćinu lěkow a relewantne přednamakanki.",
+    "parking_q": "Su parkowanišća před praksu?",
+    "parking_a": "Haj, direktnje před praksu su darmotne parkowanišća k dispoziciji. Bjezbarjerne městna su tohorunja k dispoziciji.",
+    "insurance_q": "Kotre zawěsćenja so akceptuja?",
+    "insurance_a": "Wobkedźbujemy pacientow wšěch zakonskich a priwatnych chorostnozawěsćenjow. Prošu přinjesće Wašu zawěsćensku kartku ke kóždemu wopycej.",
+    "prescription_q": "Kak móžu recepty skazać?",
+    "prescription_a": "Recepty móžeće telefonisce, per e-mejl abo přez naš kontaktny formular skazać. Prošu planujće 2 dźěłowe dny předběh. Recept leži potom k wotewzaću hotowy.",
+    "appointment_q": "Kak dojednuju sej termin?",
+    "appointment_a": "Terminy móžeće telefonisce za čas našich rěčnych hodźin abo přez naš kontaktny formular dojednać. W nuzowych padach přińdźće prošu direktnje do praksy.",
+    "documents_q": "Kotre podłožki trjebam jako diabetikar?",
+    "documents_a": "Prošu přinjesće Waš dźenik krejneho cokora, Waš diabetikowy pas, aktualnu lisćinu lěkow a ewtl. Waš wupokaz za insulinowu pumpu."
+  },
   "contact_bar": {
     "title": "Smy za Was tu.",
     "subtitle": "Dojednajće sej hišće dźensa Waš termin.",
