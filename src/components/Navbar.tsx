@@ -59,7 +59,7 @@ const Navbar = () => {
           aria-label={open ? "Menü schließen" : "Menü öffnen"}
           aria-expanded={open}
         >
-          {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {open ? <X className="w-6 h-6" aria-hidden="true" /> : <Menu className="w-6 h-6" aria-hidden="true" />}
         </button>
       </div>
 
