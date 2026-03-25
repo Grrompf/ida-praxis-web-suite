@@ -138,6 +138,7 @@
     "success_title": "Dziękujemy!",
     "success_message": "Twoja wiadomość została wysłana pomyślnie. Skontaktujemy się z Tobą jak najszybciej.",
     "toast_success": "Twoja wiadomość została wysłana!",
+    "mailto_hint": "Po wysłaniu otworzy się Twój program pocztowy z wypełnionymi danymi. Proszę wysłać e-mail, aby przesłać zapytanie.",
     "error_name": "Proszę podać swoje imię i nazwisko.",
     "error_email": "Proszę podać prawidłowy adres e-mail.",
     "error_subject": "Proszę wybrać temat.",

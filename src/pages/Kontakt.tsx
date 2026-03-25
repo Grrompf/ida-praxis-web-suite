@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle, ShieldAlert } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle, ShieldAlert, ExternalLink } from "lucide-react";
 import { Toaster, toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
@@ -187,6 +187,12 @@ const Kontakt = () => {
                   aria-describedby={errors.message ? "error-message" : undefined}
                 />
                 {errors.message && <p id="error-message" className="text-destructive text-xs mt-1" role="alert">{errors.message}</p>}
+              </div>
+              <div className="flex items-start gap-3 bg-primary/5 border border-primary/20 rounded-lg p-3.5">
+                <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <p className="text-xs text-muted-foreground leading-relaxed">
+                  {t("contact.mailto_hint")}
+                </p>
               </div>
               <label className="flex items-start gap-2 cursor-pointer">
                 <input
