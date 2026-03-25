@@ -29,7 +29,7 @@ const Footer = () => {
                 <a href={`tel:${practice.phoneFull}`} className="hover:text-primary-foreground transition-colors">{practice.phone}</a>
               </li>
               <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4 shrink-0" />
+                <Mail className="w-4 h-4 shrink-0" aria-hidden="true" />
                 <a href={`mailto:${practice.email}`} className="hover:text-primary-foreground transition-colors">{practice.email}</a>
               </li>
               <li className="flex items-start gap-2">
