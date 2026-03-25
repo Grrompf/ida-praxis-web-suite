@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import SkeletonImage from "./SkeletonImage";
 import pliquettImg from "@/assets/pliquett.webp";
 import osorginaImg from "@/assets/osorgina.webp";
 import { practice } from "@/config/practice";
