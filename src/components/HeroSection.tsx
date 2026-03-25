@@ -11,19 +11,24 @@ const HeroSection = () => {
   const [imgLoaded, setImgLoaded] = useState(false);
 
   return (
-    <section className="relative overflow-hidden" aria-label="Willkommen">
+    <section className="relative overflow-hidden bg-primary" aria-label="Willkommen">
+      {/* Skeleton pulse – visible until hero image loads */}
+      {!imgLoaded && (
+        <div className="absolute inset-0 animate-pulse" style={{ background: 'linear-gradient(135deg, hsl(204 100% 20%), hsl(204 100% 30%))' }} />
+      )}
       <div className="absolute inset-0">
         <img
           src="/hero-960.webp"
           srcSet="/hero-640.webp 640w, /hero-960.webp 960w, /hero-1200.webp 1200w"
           sizes="100vw"
           alt="IDA-Praxis Empfangsbereich"
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover transition-opacity duration-500 ${imgLoaded ? 'opacity-100' : 'opacity-0'}`}
           width={960}
           height={540}
           loading="eager"
           fetchPriority="high"
           decoding="sync"
+          onLoad={() => setImgLoaded(true)}
         />
         <div className="absolute inset-0" style={{ backgroundColor: 'hsl(204 100% 25% / 0.75)' }} />
       </div>
