@@ -53,6 +53,22 @@ const Termin = () => {
       return;
     }
     setErrors({});
+
+    const subject = encodeURIComponent(`Terminanfrage von ${form.name}`);
+    const body = encodeURIComponent(
+      `Terminanfrage\n` +
+      `──────────────────\n` +
+      `Name: ${form.name}\n` +
+      `E-Mail: ${form.email}\n` +
+      `Telefon: ${form.phone || "–"}\n` +
+      `Wunschdatum: ${form.date}\n` +
+      `Wunschzeit: ${form.timeSlot}\n` +
+      `Grund: ${form.reason}\n` +
+      `Nachricht: ${form.message || "–"}\n` +
+      `──────────────────`
+    );
+
+    window.location.href = `mailto:${practice.email}?subject=${subject}&body=${body}`;
     setSubmitted(true);
     toast.success(t("booking.toast_success"));
   };
