@@ -22,6 +22,9 @@ const Index = () => (
       <OfficeHoursSection />
     </Suspense>
     <Suspense fallback={<div className="min-h-[300px]" />}>
+      <NewsSection />
+    </Suspense>
+    <Suspense fallback={<div className="min-h-[300px]" />}>
       <GallerySection />
     </Suspense>
     <Suspense fallback={<div className="min-h-[300px]" />}>
