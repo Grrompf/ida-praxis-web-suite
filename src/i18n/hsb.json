@@ -50,6 +50,22 @@
     "osorgina_role": "Fachowa lěkarka za nutřkownu medicinu",
     "osorgina_desc": "Angažowana internistka z wosebitym fokusom na kardiovaskulanu prewenciju a pacientam blízke zastaranje."
   },
+  "news": {
+    "label": "Aktualnosće",
+    "title": "Nowosće z praksy",
+    "item1_type": "holiday",
+    "item1_date": "Měrc 2026",
+    "item1_title": "Jutrowny dowol: 2.–6. apryla 2026",
+    "item1_text": "Naša praksa wostanje wot 2. do 6. apryla začinjena. W nuzowych padach wobroćće so prošu na lěkarski hotowostny słužbu pod 116 117.",
+    "item2_type": "health",
+    "item2_date": "Nalěćo 2026",
+    "item2_title": "Nalěćny check: Diabetes-předsorga",
+    "item2_text": "Wužiwajće nalěćo za Waš lětny diabetes-check-up. Poskićamy wobšěrne HbA1c-kontrole, nohowe přepytowanja a indiwiduelne poradźowanje.",
+    "item3_type": "news",
+    "item3_date": "Februar 2026",
+    "item3_title": "Nowy CGM-system k dispoziciji",
+    "item3_text": "Wot nětka poskićamy najnowši kontinuělny glukozowy monitoringowy system. Narěčće nas při Wašim přichodnym terminje."
+  },
   "gallery": {
     "label": "Naša praksa",
     "title": "Dohlady do našich rumnosćow",

@@ -50,6 +50,22 @@
     "friday": "Freitag",
     "note": "Und nach Vereinbarung. Bitte vereinbaren Sie telefonisch einen Termin."
   },
+  "news": {
+    "label": "Aktuelles",
+    "title": "Neuigkeiten aus der Praxis",
+    "item1_type": "holiday",
+    "item1_date": "März 2026",
+    "item1_title": "Osterurlaub: 2.–6. April 2026",
+    "item1_text": "Unsere Praxis bleibt vom 2. bis 6. April geschlossen. In dringenden Fällen wenden Sie sich bitte an den ärztlichen Bereitschaftsdienst unter 116 117.",
+    "item2_type": "health",
+    "item2_date": "Frühjahr 2026",
+    "item2_title": "Frühjahrs-Check: Diabetes-Vorsorge",
+    "item2_text": "Nutzen Sie das Frühjahr für Ihren jährlichen Diabetes-Check-up. Wir bieten umfassende HbA1c-Kontrollen, Fußuntersuchungen und individuelle Beratung an.",
+    "item3_type": "news",
+    "item3_date": "Februar 2026",
+    "item3_title": "Neues CGM-System verfügbar",
+    "item3_text": "Ab sofort bieten wir das neueste kontinuierliche Glukose-Monitoring-System an. Sprechen Sie uns bei Ihrem nächsten Termin darauf an."
+  },
   "gallery": {
     "label": "Unsere Praxis",
     "title": "Einblicke in unsere Räumlichkeiten",

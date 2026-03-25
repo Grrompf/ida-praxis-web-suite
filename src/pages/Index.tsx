@@ -6,6 +6,7 @@ const TeamSection = lazy(() => import("@/components/TeamSection"));
 const OfficeHoursSection = lazy(() => import("@/components/OfficeHoursSection"));
 const GallerySection = lazy(() => import("@/components/GallerySection"));
 const FaqSection = lazy(() => import("@/components/FaqSection"));
+const NewsSection = lazy(() => import("@/components/NewsSection"));
 const ContactBar = lazy(() => import("@/components/ContactBar"));
 
 const Index = () => (
@@ -19,6 +20,9 @@ const Index = () => (
     </Suspense>
     <Suspense fallback={<div className="min-h-[200px]" />}>
       <OfficeHoursSection />
+    </Suspense>
+    <Suspense fallback={<div className="min-h-[300px]" />}>
+      <NewsSection />
     </Suspense>
     <Suspense fallback={<div className="min-h-[300px]" />}>
       <GallerySection />
