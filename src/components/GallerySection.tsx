@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import SkeletonImage from "./SkeletonImage";
 
 const images = [
   { src: "/gallery/aussen.webp", key: "exterior" },
