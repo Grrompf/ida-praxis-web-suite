@@ -142,11 +142,14 @@ const Kontakt = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.subject")} *</label>
+                  <label htmlFor="contact-subject" className="block text-sm font-semibold text-foreground mb-1">{t("contact.subject")} *</label>
                   <select
+                    id="contact-subject"
                     value={form.subject || ""}
                     onChange={(e) => update("subject", e.target.value)}
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    aria-invalid={!!errors.subject}
+                    aria-describedby={errors.subject ? "error-subject" : undefined}
                   >
                     <option value="">{t("contact.subject_placeholder")}</option>
                     <option>{t("contact.subject_appointment")}</option>
