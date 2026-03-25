@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import SkipLink from "./components/SkipLink";
 import Index from "./pages/Index";
 import CookieConsent from "./components/CookieConsent";
 
