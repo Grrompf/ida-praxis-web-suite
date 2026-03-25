@@ -50,6 +50,22 @@
     "osorgina_role": "Specjalistka medycyny wewnętrznej",
     "osorgina_desc": "Zaangażowana internistka ze szczególnym naciskiem na profilaktykę sercowo-naczyniową i opiekę skoncentrowaną na pacjencie."
   },
+  "news": {
+    "label": "Aktualności",
+    "title": "Nowości z praktyki",
+    "item1_type": "holiday",
+    "item1_date": "Marzec 2026",
+    "item1_title": "Urlop wielkanocny: 2–6 kwietnia 2026",
+    "item1_text": "Nasza praktyka będzie zamknięta od 2 do 6 kwietnia. W nagłych wypadkach prosimy o kontakt z pogotowiem lekarskim pod numerem 116 117.",
+    "item2_type": "health",
+    "item2_date": "Wiosna 2026",
+    "item2_title": "Wiosenny check: profilaktyka cukrzycowa",
+    "item2_text": "Wykorzystaj wiosnę na coroczne badanie cukrzycowe. Oferujemy kompleksowe badania HbA1c, badania stóp i indywidualne doradztwo.",
+    "item3_type": "news",
+    "item3_date": "Luty 2026",
+    "item3_title": "Nowy system CGM dostępny",
+    "item3_text": "Od teraz oferujemy najnowszy system ciągłego monitorowania glukozy. Zapytaj nas o to podczas następnej wizyty."
+  },
   "gallery": {
     "label": "Nasza praktyka",
     "title": "Zaglądnij do naszych pomieszczeń",
