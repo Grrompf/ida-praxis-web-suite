@@ -161,15 +161,18 @@ const Kontakt = () => {
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.message")} *</label>
+                <label htmlFor="contact-message" className="block text-sm font-semibold text-foreground mb-1">{t("contact.message")} *</label>
                 <textarea
+                  id="contact-message"
                   rows={5}
                   value={form.message || ""}
                   onChange={(e) => update("message", e.target.value)}
                   className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 resize-none"
                   placeholder={t("contact.message_placeholder")}
+                  aria-invalid={!!errors.message}
+                  aria-describedby={errors.message ? "error-message" : undefined}
                 />
-                {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
+                {errors.message && <p id="error-message" className="text-destructive text-xs mt-1" role="alert">{errors.message}</p>}
               </div>
               <label className="flex items-start gap-2 cursor-pointer">
                 <input
