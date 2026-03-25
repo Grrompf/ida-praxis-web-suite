@@ -131,8 +131,9 @@ const Kontakt = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.phone_label")}</label>
+                  <label htmlFor="contact-phone" className="block text-sm font-semibold text-foreground mb-1">{t("contact.phone_label")}</label>
                   <input
+                    id="contact-phone"
                     type="tel"
                     value={form.phone || ""}
                     onChange={(e) => update("phone", e.target.value)}
