@@ -173,20 +173,15 @@ const Termin = () => {
                 {t("booking.date_time")}
               </legend>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label htmlFor="booking-date" className="block text-sm font-semibold text-foreground mb-1">
+              <div className="sm:col-span-2">
+                  <label className="block text-sm font-semibold text-foreground mb-2">
                     {t("booking.preferred_date")} *
                   </label>
-                  <input
-                    id="booking-date"
-                    type="date"
-                    value={form.date || ""}
-                    onChange={(e) => update("date", e.target.value)}
-                    min={minDate}
-                    max={maxDateStr}
-                    className={inputClass}
-                    aria-invalid={!!errors.date}
-                    aria-describedby={errors.date ? "err-date" : undefined}
+                  <BookingCalendar
+                    value={form.date}
+                    onChange={(d) => update("date", d)}
+                    minDate={minDate}
+                    maxDate={maxDateStr}
                   />
                   {errors.date && (
                     <p id="err-date" className="text-destructive text-xs mt-1" role="alert">{errors.date}</p>
