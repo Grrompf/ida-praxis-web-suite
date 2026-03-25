@@ -101,32 +101,39 @@ const Kontakt = () => {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.name")} *</label>
+                  <label htmlFor="contact-name" className="block text-sm font-semibold text-foreground mb-1">{t("contact.name")} *</label>
                   <input
+                    id="contact-name"
                     type="text"
                     value={form.name || ""}
                     onChange={(e) => update("name", e.target.value)}
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     placeholder={t("contact.name_placeholder")}
+                    aria-invalid={!!errors.name}
+                    aria-describedby={errors.name ? "error-name" : undefined}
                   />
-                  {errors.name && <p className="text-destructive text-xs mt-1">{errors.name}</p>}
+                  {errors.name && <p id="error-name" className="text-destructive text-xs mt-1" role="alert">{errors.name}</p>}
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.email")} *</label>
+                  <label htmlFor="contact-email" className="block text-sm font-semibold text-foreground mb-1">{t("contact.email")} *</label>
                   <input
+                    id="contact-email"
                     type="email"
                     value={form.email || ""}
                     onChange={(e) => update("email", e.target.value)}
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
                     placeholder={t("contact.email_placeholder")}
+                    aria-invalid={!!errors.email}
+                    aria-describedby={errors.email ? "error-email" : undefined}
                   />
-                  {errors.email && <p className="text-destructive text-xs mt-1">{errors.email}</p>}
+                  {errors.email && <p id="error-email" className="text-destructive text-xs mt-1" role="alert">{errors.email}</p>}
                 </div>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.phone_label")}</label>
+                  <label htmlFor="contact-phone" className="block text-sm font-semibold text-foreground mb-1">{t("contact.phone_label")}</label>
                   <input
+                    id="contact-phone"
                     type="tel"
                     value={form.phone || ""}
                     onChange={(e) => update("phone", e.target.value)}
@@ -135,11 +142,14 @@ const Kontakt = () => {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.subject")} *</label>
+                  <label htmlFor="contact-subject" className="block text-sm font-semibold text-foreground mb-1">{t("contact.subject")} *</label>
                   <select
+                    id="contact-subject"
                     value={form.subject || ""}
                     onChange={(e) => update("subject", e.target.value)}
                     className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground focus:outline-none focus:ring-2 focus:ring-accent/50"
+                    aria-invalid={!!errors.subject}
+                    aria-describedby={errors.subject ? "error-subject" : undefined}
                   >
                     <option value="">{t("contact.subject_placeholder")}</option>
                     <option>{t("contact.subject_appointment")}</option>
@@ -147,19 +157,22 @@ const Kontakt = () => {
                     <option>{t("contact.subject_prescription")}</option>
                     <option>{t("contact.subject_general")}</option>
                   </select>
-                  {errors.subject && <p className="text-destructive text-xs mt-1">{errors.subject}</p>}
+                  {errors.subject && <p id="error-subject" className="text-destructive text-xs mt-1" role="alert">{errors.subject}</p>}
                 </div>
               </div>
               <div>
-                <label className="block text-sm font-semibold text-foreground mb-1">{t("contact.message")} *</label>
+                <label htmlFor="contact-message" className="block text-sm font-semibold text-foreground mb-1">{t("contact.message")} *</label>
                 <textarea
+                  id="contact-message"
                   rows={5}
                   value={form.message || ""}
                   onChange={(e) => update("message", e.target.value)}
                   className="w-full bg-background border rounded-lg px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent/50 resize-none"
                   placeholder={t("contact.message_placeholder")}
+                  aria-invalid={!!errors.message}
+                  aria-describedby={errors.message ? "error-message" : undefined}
                 />
-                {errors.message && <p className="text-destructive text-xs mt-1">{errors.message}</p>}
+                {errors.message && <p id="error-message" className="text-destructive text-xs mt-1" role="alert">{errors.message}</p>}
               </div>
               <label className="flex items-start gap-2 cursor-pointer">
                 <input
@@ -174,7 +187,7 @@ const Kontakt = () => {
                   {" *"}
                 </span>
               </label>
-              {errors.privacy && <p className="text-destructive text-xs">{errors.privacy}</p>}
+              {errors.privacy && <p className="text-destructive text-xs" role="alert">{errors.privacy}</p>}
               <button
                 type="submit"
                 className="inline-flex items-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold text-sm hover:bg-accent/90 transition-colors"

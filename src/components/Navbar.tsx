@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
 
 const LanguageSwitcher = lazy(() => import("./LanguageSwitcher"));
+const FontSizeSwitcher = lazy(() => import("./FontSizeSwitcher"));
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-card border-b shadow-sm">
+    <header className="sticky top-0 z-50 bg-card border-b shadow-sm" role="banner">
       <div className="container flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2">
           <span className="text-xl md:text-2xl font-bold text-primary tracking-tight">IDA</span>
@@ -27,7 +28,7 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6" aria-label="Hauptnavigation">
           {navLinks.map((l) => (
             <Link
               key={l.to}
@@ -40,6 +41,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Suspense fallback={<div className="w-20" />}><LanguageSwitcher /></Suspense>
+          <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
           <a
             href={`tel:${practice.phoneFull}`}
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:bg-primary/90 transition-colors"
@@ -52,7 +54,8 @@ const Navbar = () => {
         <button
           className="md:hidden p-2 text-foreground"
           onClick={() => setOpen(!open)}
-          aria-label="Menü öffnen"
+          aria-label={open ? "Menü schließen" : "Menü öffnen"}
+          aria-expanded={open}
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -74,6 +77,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Suspense fallback={<div className="h-8" />}><LanguageSwitcher /></Suspense>
+            <Suspense fallback={null}><FontSizeSwitcher /></Suspense>
             <a
               href={`tel:${practice.phoneFull}`}
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold w-fit"

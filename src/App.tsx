@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import SkipLink from "./components/SkipLink";
 import Index from "./pages/Index";
 import CookieConsent from "./components/CookieConsent";
 
@@ -27,8 +28,9 @@ const DeferredLoader = ({ children }: { children: React.ReactNode }) => {
 const App = () => (
   <BrowserRouter>
     <div className="flex flex-col min-h-screen">
+      <SkipLink />
       <Navbar />
-      <main className="flex-1">
+      <main id="main-content" className="flex-1" tabIndex={-1}>
         <Suspense fallback={<div className="min-h-screen" />}>
           <Routes>
             <Route path="/" element={<Index />} />

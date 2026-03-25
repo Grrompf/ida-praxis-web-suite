@@ -53,13 +53,15 @@ const LanguageSwitcher = () => {
           onClick={() => setOpen(!open)}
           className="flex items-center gap-1.5 p-1.5 rounded border border-border bg-card hover:bg-muted transition-colors"
           aria-label={currentMeta?.alt}
+          aria-expanded={open}
+          aria-haspopup="listbox"
         >
           <CurrentFlag />
           <ChevronDown className={`w-3.5 h-3.5 text-muted-foreground transition-transform ${open ? "rotate-180" : ""}`} />
         </button>
 
         {open && (
-          <div className="absolute right-0 top-full mt-1 bg-card border border-border rounded-lg shadow-lg py-1 z-50 min-w-[180px]">
+          <div className="absolute right-0 top-full mt-1 bg-card border border-border rounded-lg shadow-lg py-1 z-50 min-w-[180px]" role="listbox" aria-label="Sprache wählen">
             {supportedLanguages.map((lang) => {
               const meta = languageMeta[lang];
               const isActive = i18n.language === lang;
