@@ -28,7 +28,7 @@ const Navbar = () => {
           </span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6" aria-label="Hauptnavigation">
           {navLinks.map((l) => (
             <Link
               key={l.to}
