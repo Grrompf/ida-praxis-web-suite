@@ -189,7 +189,7 @@ const Kontakt = () => {
                 {errors.message && <p id="error-message" className="text-destructive text-xs mt-1" role="alert">{errors.message}</p>}
               </div>
               <div className="flex items-start gap-3 bg-primary/5 border border-primary/20 rounded-lg p-3.5">
-                <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                <ExternalLink className="w-5 h-5 text-primary mt-0.5 shrink-0" aria-hidden="true" />
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   {t("contact.mailto_hint")}
                 </p>
