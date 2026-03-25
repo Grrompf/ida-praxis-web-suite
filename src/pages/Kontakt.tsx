@@ -67,7 +67,7 @@ const Kontakt = () => {
     return (
       <section className="py-28">
         <div className="container max-w-lg text-center">
-          <CheckCircle className="w-16 h-16 text-accent mx-auto mb-6" />
+          <CheckCircle className="w-16 h-16 text-accent mx-auto mb-6" aria-hidden="true" />
           <h1 className="text-3xl font-bold text-foreground mb-4">{t("contact.success_title")}</h1>
           <p className="text-muted-foreground">{t("contact.success_message")}</p>
         </div>
