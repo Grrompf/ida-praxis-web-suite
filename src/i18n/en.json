@@ -50,6 +50,15 @@
     "osorgina_role": "Specialist in Internal Medicine",
     "osorgina_desc": "Dedicated internist with a focus on cardiovascular prevention and patient-centred care. Complements the practice team with expertise and empathy."
   },
+  "gallery": {
+    "label": "Our Practice",
+    "title": "A Look Inside Our Premises",
+    "exterior": "Practice exterior",
+    "reception": "Reception area",
+    "waiting": "Waiting room",
+    "treatment": "Treatment room",
+    "lab": "Diagnostics lab"
+  },
   "contact_bar": {
     "title": "We are here for you.",
     "subtitle": "Schedule your appointment today.",
