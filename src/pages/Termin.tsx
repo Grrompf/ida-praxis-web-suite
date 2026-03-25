@@ -4,7 +4,6 @@ import { Toaster, toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
 import BookingCalendar from "@/components/BookingCalendar";
-import { practice } from "@/config/practice";
 
 type BookingForm = {
   name?: string;
