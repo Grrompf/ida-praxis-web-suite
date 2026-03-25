@@ -6,6 +6,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 
 const ContactBar = () => {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
 
   return (
     <section className="bg-accent text-accent-foreground py-10 md:py-14">
