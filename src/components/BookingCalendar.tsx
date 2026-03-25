@@ -48,7 +48,12 @@ interface BookingCalendarProps {
   maxDate: string;
 }
 
-const WEEKDAY_KEYS = ["hours.monday", "hours.tuesday", "hours.wednesday", "hours.thursday", "hours.friday", "hours.saturday", "hours.sunday"] as const;
+const WEEKDAYS_SHORT: Record<string, string[]> = {
+  de: ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"],
+  en: ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
+  hsb: ["Pó", "Wu", "Sr", "Št", "Pj", "So", "Nj"],
+  pl: ["Pn", "Wt", "Śr", "Cz", "Pt", "So", "Nd"],
+};
 
 const BookingCalendar = ({ value, onChange, minDate, maxDate }: BookingCalendarProps) => {
   const { t } = useTranslation();
