@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Calendar, Send, CheckCircle, ShieldAlert, Clock, User, Mail, Phone } from "lucide-react";
+import { Calendar, Send, CheckCircle, ShieldAlert, Clock, User, Mail, Phone, ExternalLink } from "lucide-react";
 import { Toaster, toast } from "sonner";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
