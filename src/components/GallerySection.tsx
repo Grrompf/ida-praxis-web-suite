@@ -88,7 +88,7 @@ const GallerySection = () => {
         >
           <button
             onClick={close}
-            className="absolute top-4 right-4 text-white/80 hover:text-white p-2"
+            className="absolute top-4 right-4 text-white hover:text-white/90 p-2"
             aria-label="Schließen"
           >
             <X className="w-7 h-7" aria-hidden="true" />
