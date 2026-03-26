@@ -113,7 +113,7 @@ const GallerySection = () => {
           >
             <ChevronRight className="w-8 h-8" aria-hidden="true" />
           </button>
-          <div className="absolute bottom-4 text-white/70 text-sm">
+          <div className="absolute bottom-4 text-white text-sm">
             {lightbox + 1} / {images.length}
           </div>
         </div>
