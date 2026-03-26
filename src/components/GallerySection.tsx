@@ -38,7 +38,7 @@ const GallerySection = () => {
     <section className="py-16 md:py-24 bg-muted/50" aria-label={t("gallery.label")}>
       <div className="container">
         <div className="text-center mb-10">
-          <span className="text-sm font-semibold text-accent uppercase tracking-wider">
+          <span className="text-sm font-bold text-primary uppercase tracking-wider">
             {t("gallery.label")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
@@ -88,14 +88,14 @@ const GallerySection = () => {
         >
           <button
             onClick={close}
-            className="absolute top-4 right-4 text-white/80 hover:text-white p-2"
+            className="absolute top-4 right-4 text-white hover:text-white/90 p-2"
             aria-label="Schließen"
           >
             <X className="w-7 h-7" aria-hidden="true" />
           </button>
           <button
             onClick={(e) => { e.stopPropagation(); prev(); }}
-            className="absolute left-2 md:left-6 text-white/80 hover:text-white p-2"
+            className="absolute left-2 md:left-6 text-white hover:text-white/90 p-2"
             aria-label="Vorheriges Bild"
           >
             <ChevronLeft className="w-8 h-8" aria-hidden="true" />
@@ -108,12 +108,12 @@ const GallerySection = () => {
           />
           <button
             onClick={(e) => { e.stopPropagation(); next(); }}
-            className="absolute right-2 md:right-6 text-white/80 hover:text-white p-2"
+            className="absolute right-2 md:right-6 text-white hover:text-white/90 p-2"
             aria-label="Nächstes Bild"
           >
             <ChevronRight className="w-8 h-8" aria-hidden="true" />
           </button>
-          <div className="absolute bottom-4 text-white/70 text-sm">
+          <div className="absolute bottom-4 text-white text-sm">
             {lightbox + 1} / {images.length}
           </div>
         </div>
