@@ -108,7 +108,7 @@ const GallerySection = () => {
           />
           <button
             onClick={(e) => { e.stopPropagation(); next(); }}
-            className="absolute right-2 md:right-6 text-white/80 hover:text-white p-2"
+            className="absolute right-2 md:right-6 text-white hover:text-white/90 p-2"
             aria-label="Nächstes Bild"
           >
             <ChevronRight className="w-8 h-8" aria-hidden="true" />
