@@ -12,7 +12,7 @@ const NewsSection = () => {
     <section className="py-16 md:py-24 bg-muted/50" aria-label={t("news.label")}>
       <div className="container">
         <div className="text-center mb-10">
-          <span className="text-sm font-bold text-primary uppercase tracking-wider">
+          <span className="text-sm font-semibold text-accent uppercase tracking-wider">
             {t("news.label")}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2">
