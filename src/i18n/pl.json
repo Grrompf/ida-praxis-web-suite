@@ -2,6 +2,14 @@
   "common": {
     "city_name": "Krauschwitz"
   },
+  "notFound": {
+    "label": "Strona nie znaleziona",
+    "title": "Wygląda na to, że coś się tu zgubiło.",
+    "description": "Ta strona nie istnieje lub została przeniesiona. Nasz zespół przyjrzał się sprawie z bliska – najlepiej wróć na stronę główną lub zadzwoń do nas bezpośrednio.",
+    "cta_home": "Na stronę główną",
+    "cta_call": "Zadzwoń do gabinetu",
+    "image_alt": "Zespół praktyki bada brakującą stronę internetową przez lupę"
+  },
   "nav": {
     "home": "Strona główna",
     "booking": "Wizyta",

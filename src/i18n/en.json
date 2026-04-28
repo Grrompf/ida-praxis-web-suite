@@ -2,6 +2,14 @@
   "common": {
     "city_name": "Krauschwitz"
   },
+  "notFound": {
+    "label": "Page not found",
+    "title": "Looks like something got lost here.",
+    "description": "This page doesn't exist or has been moved. Our team has taken a closer look – best return to the homepage or give us a call directly.",
+    "cta_home": "Back to homepage",
+    "cta_call": "Call the practice",
+    "image_alt": "The practice team examining a missing webpage with a magnifying glass"
+  },
   "nav": {
     "home": "Home",
     "booking": "Appointment",

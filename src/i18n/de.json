@@ -2,6 +2,14 @@
   "common": {
     "city_name": "Krauschwitz"
   },
+  "notFound": {
+    "label": "Seite nicht gefunden",
+    "title": "Hier hat sich wohl etwas verlaufen.",
+    "description": "Diese Seite existiert nicht oder wurde verschoben. Unser Team hat sich die Sache mal genauer angeschaut – kehren Sie am besten zur Startseite zurück oder rufen Sie uns direkt an.",
+    "cta_home": "Zur Startseite",
+    "cta_call": "Praxis anrufen",
+    "image_alt": "Das Praxisteam untersucht eine fehlende Webseite mit einer Lupe"
+  },
   "nav": {
     "home": "Home",
     "booking": "Termin",
