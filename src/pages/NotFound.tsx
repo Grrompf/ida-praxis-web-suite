@@ -40,7 +40,7 @@ const NotFound = () => {
                 </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href={`tel:${practice.phoneRaw}`}>
+                <a href={`tel:${practice.phoneFull}`}>
                   <Phone className="w-4 h-4" aria-hidden="true" />
                   {t("notFound.cta_call")}
                 </a>
