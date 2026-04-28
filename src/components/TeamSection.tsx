@@ -32,11 +32,11 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-4xl mx-auto">
           {team.map((m) => (
             <div key={m.name} className="bg-background rounded-xl overflow-hidden shadow-lg border">
-              <div className="aspect-[4/3] overflow-hidden bg-muted">
+              <div className="aspect-[4/3] overflow-hidden">
                 <SkeletonImage
                   src={m.image}
                   alt={`Portrait ${m.name}`}
-                  className="w-full h-full object-contain hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   skeletonClass="w-full h-full"
                   width={400}
                   height={300}
