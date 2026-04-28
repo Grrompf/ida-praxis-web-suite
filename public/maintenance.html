@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Wartungsarbeiten – IDA-Praxis</title>
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background:linear-gradient(180deg,#f5f7fa 0%,#e9eef3 100%);
+    color:#1a2332;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+    line-height:1.5;
+  }
+  .card{
+    max-width:960px;
+    width:100%;
+    background:#fff;
+    border-radius:20px;
+    box-shadow:0 10px 40px rgba(0,74,128,.12);
+    padding:40px 32px;
+    text-align:center;
+  }
+  img.illu{
+    max-width:100%;
+    height:auto;
+    width:560px;
+    margin:0 auto 24px;
+    display:block;
+  }
+  .label{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    color:hsl(90,55%,32%);
+    margin-bottom:12px;
+  }
+  h1{
+    font-size:clamp(28px,4vw,40px);
+    color:#004a80;
+    margin:0 0 16px;
+    line-height:1.2;
+  }
+  p{
+    font-size:17px;
+    color:#4b5868;
+    max-width:560px;
+    margin:0 auto 12px;
+  }
+  .divider{
+    width:48px;
+    height:3px;
+    background:#004a80;
+    border-radius:2px;
+    margin:28px auto;
+    opacity:.2;
+  }
+  .lang{
+    color:#6b7886;
+    font-size:15px;
+  }
+  .lang strong{color:#1a2332}
+  @media (prefers-color-scheme: dark){
+    body{background:linear-gradient(180deg,#0f1620 0%,#1a2332 100%);color:#e8edf3}
+    .card{background:#1a2332;box-shadow:0 10px 40px rgba(0,0,0,.4)}
+    h1{color:#7eb8e0}
+    p{color:#a8b3c0}
+    .lang{color:#8a96a4}
+    .lang strong{color:#e8edf3}
+  }
+</style>
+</head>
+<body>
+  <main class="card" role="main">
+    <img class="illu" src="/maintenance.png" alt="Das Praxisteam führt Wartungsarbeiten an der Webseite durch">
+    <span class="label">IDA-Praxis</span>
+    <h1>Wir sind gleich wieder da.</h1>
+    <p>Unsere Webseite wird gerade gewartet und ist in wenigen Augenblicken wieder erreichbar. Vielen Dank für Ihre Geduld.</p>
+
+    <div class="divider" aria-hidden="true"></div>
+
+    <p class="lang"><strong>EN —</strong> We're performing scheduled maintenance and will be back online shortly. Thank you for your patience.</p>
+    <p class="lang"><strong>HSB —</strong> Naša websydło so runje hladajo a budźe za chwilku zaso docpějomne. Wulki dźak za Wašu sćerpnosć.</p>
+    <p class="lang"><strong>PL —</strong> Trwają prace konserwacyjne. Strona będzie ponownie dostępna za chwilę. Dziękujemy za cierpliwość.</p>
+  </main>
+</body>
+</html>
