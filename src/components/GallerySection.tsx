@@ -5,7 +5,7 @@ import SkeletonImage from "./SkeletonImage";
 
 const images = [
   { src: "/gallery/aussen.webp", key: "exterior" },
-  { src: "/gallery/wartezimmer.webp", key: "team" },
+  { src: "/gallery/team.webp", key: "team" },
   { src: "/gallery/empfang.webp", key: "reception" },
   { src: "/gallery/behandlung.webp", key: "treatment" },
   { src: "/gallery/labor.webp", key: "lab" },
