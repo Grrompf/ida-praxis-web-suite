@@ -2,6 +2,14 @@
   "common": {
     "city_name": "Krušwica"
   },
+  "notFound": {
+    "label": "Strona njenamakana",
+    "title": "Tu so něšto zhubiło.",
+    "description": "Tuta strona njeeksistuje abo je so přesunyła. Naš team je sebi to bliže wobhladał – nawróćće so prošu na startowu stronu abo zazwońće nam direktnje.",
+    "cta_home": "Na startowu stronu",
+    "cta_call": "Praksu zazwonić",
+    "image_alt": "Team praksy pruwuje pobrachowacu webstronu z lupu"
+  },
   "nav": {
     "home": "Startowa strona",
     "booking": "Termin",
