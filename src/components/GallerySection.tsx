@@ -64,7 +64,7 @@ const GallerySection = () => {
                 height={640}
                 className={`w-full object-cover transition-transform duration-300 group-hover:scale-105 ${
                   i === 0 ? "h-48 md:h-full" : "h-40 md:h-56"
-                } ${img.key === "lab" ? "[object-position:50%_20%]" : img.key === "waiting" ? "[object-position:50%_10%]" : "object-center"}`}
+                } ${img.key === "lab" ? "[object-position:50%_20%]" : img.key === "team" ? "[object-position:50%_10%]" : "object-center"}`}
                 skeletonClass="w-full h-full"
               />
               <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/20 transition-colors flex items-end p-3">
