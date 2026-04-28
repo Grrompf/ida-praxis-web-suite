@@ -51,8 +51,8 @@ const Anfahrt = () => {
               </div>
             </div>
 
-            <div className="rounded-xl overflow-hidden shadow-lg bg-muted">
-              <img src={locationImg} alt="Außenansicht der IDA-Praxis in Krauschwitz" className="w-full h-auto object-contain" width={600} height={399} loading="lazy" decoding="async" />
+            <div className="rounded-xl overflow-hidden shadow-lg">
+              <img src={locationImg} alt="Außenansicht der IDA-Praxis in Krauschwitz" className="w-full h-48 object-cover" width={600} height={399} loading="lazy" decoding="async" />
             </div>
           </div>
 
