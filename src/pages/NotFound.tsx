@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { practice } from "@/config/practice";
-import notFoundImage from "@/assets/404-team.png";
+import notFoundImage from "@/assets/404-team.webp";
 
 const NotFound = () => {
   const location = useLocation();
