@@ -34,6 +34,14 @@
     "cta_call": "Zadzwoń do gabinetu",
     "image_alt": "Zespół praktyki wspólnie napiera na bramę, przez którą wciskają się obce macki"
   },
+  "serviceUnavailable": {
+    "label": "Usługa chwilowo niedostępna",
+    "title": "Wszyscy jesteśmy teraz w pełnej akcji.",
+    "description": "W tej chwili mamy bardzo dużo pracy i usługa jest tymczasowo niedostępna. Nasz zespół pracuje na pełnych obrotach – z uśmiechem. Prosimy spróbować ponownie za chwilę, wrócić na stronę główną lub zadzwonić do nas bezpośrednio.",
+    "cta_home": "Na stronę główną",
+    "cta_call": "Zadzwoń do gabinetu",
+    "image_alt": "Zespół praktyki bardzo zajęty: telefony, stosy akt, szybkie pisanie na komputerze i obsługa pacjentów – wszyscy się uśmiechają"
+  },
   "nav": {
     "home": "Strona główna",
     "booking": "Wizyta",
