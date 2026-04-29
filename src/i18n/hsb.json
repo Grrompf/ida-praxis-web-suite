@@ -50,6 +50,14 @@
     "cta_call": "Praksu zazwonić",
     "image_alt": "Team praksy přećelnje mawa, mjeztym zo staruju webstronu do archiwoweho kartona kładźe"
   },
+  "teapot": {
+    "label": "Mała tejowa přestawka",
+    "title": "Runje mamy krótku přestawku.",
+    "description": "Tuta strona je mały žortny pokiw (HTTP 418 – „I'm a teapot\"). Tu ničo wažne wuhladać njeje – jenož naš team při zasłuženej šalce teja. Wróćće so prošu na startowu stronu abo zazwońće nam, jeli něšto trjebaće.",
+    "cta_home": "Na startowu stronu",
+    "cta_call": "Praksu zazwonić",
+    "image_alt": "Team praksy sedźi hromadźe při blidźe na tejowej přestawce z parjacej tejowej kanu"
+  },
   "nav": {
     "home": "Startowa strona",
     "booking": "Termin",

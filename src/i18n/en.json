@@ -50,6 +50,14 @@
     "cta_call": "Call the practice",
     "image_alt": "The practice team friendly waving as they place an old webpage into an archive box"
   },
+  "teapot": {
+    "label": "A little tea break",
+    "title": "We're taking a short break.",
+    "description": "This is a small playful page (HTTP 418 – \"I'm a teapot\"). There's nothing important to see here – just our team enjoying a well-earned cup of tea. Feel free to head back to the homepage or call us if you need anything.",
+    "cta_home": "Back to homepage",
+    "cta_call": "Call the practice",
+    "image_alt": "The practice team sitting together at a table during a tea break with a steaming teapot"
+  },
   "nav": {
     "home": "Home",
     "booking": "Appointment",
