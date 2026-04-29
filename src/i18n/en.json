@@ -13,7 +13,7 @@
   "forbidden": {
     "label": "Access denied",
     "title": "This page is off-limits.",
-    "description": "You don't have permission to access this page. If you believe this is an error, please return to the homepage or contact us directly.",
+    "description": "You don't have permission to access this page. Please return to the homepage or contact us directly.",
     "cta_home": "Back to homepage",
     "cta_call": "Call the practice",
     "image_alt": "The practice team standing in front of a locked webpage with a padlock icon"
