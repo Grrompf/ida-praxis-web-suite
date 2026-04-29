@@ -26,6 +26,14 @@
     "cta_call": "Call the practice",
     "image_alt": "The practice team trying to tame a robot that has gone haywire"
   },
+  "badGateway": {
+    "label": "Bad gateway",
+    "title": "Something is pushing hard from the outside.",
+    "description": "An upstream connection isn't responding right now – our team is bracing against it with all their might. Please try again shortly, return to the homepage or give us a call directly.",
+    "cta_home": "Back to homepage",
+    "cta_call": "Call the practice",
+    "image_alt": "The practice team bracing together against a gate as alien tentacles push through"
+  },
   "nav": {
     "home": "Home",
     "booking": "Appointment",
