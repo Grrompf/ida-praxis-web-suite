@@ -42,6 +42,14 @@
     "cta_call": "Praksu zazwonić",
     "image_alt": "Team praksy je jara wobćežowany: telefonuje, nosy akty, tipa na ličaku a witaj pacientow – wšitcy so smějkaja"
   },
+  "gone": {
+    "label": "Wobsah trajnje wotstronjeny",
+    "title": "Tutu stronu smy do archiwa złožili.",
+    "description": "Pytany wobsah je trajnje wotstronjeny a hižo k dispoziciji njeje. Wšitke aktualne informacije namakaće na našej startowej stronje – abo nas jednorje direktnje zazwońće, rady wam pomhamy.",
+    "cta_home": "Na startowu stronu",
+    "cta_call": "Praksu zazwonić",
+    "image_alt": "Team praksy přećelnje mawa, mjeztym zo staruju webstronu do archiwoweho kartona kładźe"
+  },
   "nav": {
     "home": "Startowa strona",
     "booking": "Termin",

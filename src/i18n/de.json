@@ -42,6 +42,14 @@
     "cta_call": "Praxis anrufen",
     "image_alt": "Das Praxisteam ist hochbeschäftigt: Telefonieren, Akten tragen, Tippen am Computer und Patienten empfangen – alle lächelnd"
   },
+  "gone": {
+    "label": "Inhalt dauerhaft entfernt",
+    "title": "Diese Seite haben wir ins Archiv gelegt.",
+    "description": "Der gesuchte Inhalt wurde dauerhaft entfernt und ist nicht mehr verfügbar. Auf unserer Startseite finden Sie alle aktuellen Informationen – oder rufen Sie uns einfach direkt an, wir helfen Ihnen gerne weiter.",
+    "cta_home": "Zur Startseite",
+    "cta_call": "Praxis anrufen",
+    "image_alt": "Das Praxisteam legt eine alte Webseite freundlich winkend in einen Archivkarton"
+  },
   "nav": {
     "home": "Home",
     "booking": "Termin",
