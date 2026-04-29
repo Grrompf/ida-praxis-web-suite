@@ -16,6 +16,7 @@ const Forbidden = lazy(() => import("./pages/Forbidden"));
 const ServerError = lazy(() => import("./pages/ServerError"));
 const BadGateway = lazy(() => import("./pages/BadGateway"));
 const ServiceUnavailable = lazy(() => import("./pages/ServiceUnavailable"));
+const Gone = lazy(() => import("./pages/Gone"));
 
 const DeferredLoader = ({ children }: { children: React.ReactNode }) => {
   const [ready, setReady] = useState(false);
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/500" element={<ServerError />} />
             <Route path="/502" element={<BadGateway />} />
             <Route path="/503" element={<ServiceUnavailable />} />
+            <Route path="/410" element={<Gone />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

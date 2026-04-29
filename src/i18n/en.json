@@ -42,6 +42,14 @@
     "cta_call": "Call the practice",
     "image_alt": "The practice team extremely busy: juggling phones, carrying files, typing fast and welcoming patients – all smiling"
   },
+  "gone": {
+    "label": "Content permanently removed",
+    "title": "We've moved this page to the archive.",
+    "description": "The content you were looking for has been permanently removed and is no longer available. You'll find all current information on our homepage – or simply give us a call, we're happy to help.",
+    "cta_home": "Back to homepage",
+    "cta_call": "Call the practice",
+    "image_alt": "The practice team friendly waving as they place an old webpage into an archive box"
+  },
   "nav": {
     "home": "Home",
     "booking": "Appointment",

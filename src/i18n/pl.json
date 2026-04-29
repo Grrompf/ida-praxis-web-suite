@@ -42,6 +42,14 @@
     "cta_call": "Zadzwoń do gabinetu",
     "image_alt": "Zespół praktyki bardzo zajęty: telefony, stosy akt, szybkie pisanie na komputerze i obsługa pacjentów – wszyscy się uśmiechają"
   },
+  "gone": {
+    "label": "Treść trwale usunięta",
+    "title": "Tę stronę przenieśliśmy do archiwum.",
+    "description": "Szukana treść została trwale usunięta i nie jest już dostępna. Wszystkie aktualne informacje znajdziesz na naszej stronie głównej – albo po prostu zadzwoń do nas, chętnie pomożemy.",
+    "cta_home": "Na stronę główną",
+    "cta_call": "Zadzwoń do gabinetu",
+    "image_alt": "Zespół praktyki przyjaźnie macha, wkładając starą stronę internetową do kartonu archiwalnego"
+  },
   "nav": {
     "home": "Strona główna",
     "booking": "Wizyta",
