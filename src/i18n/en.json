@@ -34,6 +34,14 @@
     "cta_call": "Call the practice",
     "image_alt": "The practice team bracing together against a gate as alien tentacles push through"
   },
+  "serviceUnavailable": {
+    "label": "Service currently unavailable",
+    "title": "We're all hands on deck right now.",
+    "description": "Things are very busy at the moment and the service is temporarily unavailable. Our team is working at full speed – with a smile. Please try again shortly, return to the homepage or give us a call directly.",
+    "cta_home": "Back to homepage",
+    "cta_call": "Call the practice",
+    "image_alt": "The practice team extremely busy: juggling phones, carrying files, typing fast and welcoming patients – all smiling"
+  },
   "nav": {
     "home": "Home",
     "booking": "Appointment",

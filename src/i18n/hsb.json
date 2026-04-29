@@ -34,6 +34,14 @@
     "cta_call": "Praksu zazwonić",
     "image_alt": "Team praksy so hromadźe přećiwi wrotam, přez kotrež so alien-tentakle nutř tłóča"
   },
+  "serviceUnavailable": {
+    "label": "Słužba runje njedosahna",
+    "title": "Smy runje wšitcy w nasadźe.",
+    "description": "Tuchwilu je pola nas wjele dźěła a słužba je nachwilnje njedosahna. Naš team dźěła ze smějkom z połnej móc. Prošu spytajće hišće raz, nawróćće so na startowu stronu abo zazwońće nam direktnje.",
+    "cta_home": "Na startowu stronu",
+    "cta_call": "Praksu zazwonić",
+    "image_alt": "Team praksy je jara wobćežowany: telefonuje, nosy akty, tipa na ličaku a witaj pacientow – wšitcy so smějkaja"
+  },
   "nav": {
     "home": "Startowa strona",
     "booking": "Termin",

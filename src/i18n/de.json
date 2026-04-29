@@ -34,6 +34,14 @@
     "cta_call": "Praxis anrufen",
     "image_alt": "Das Praxisteam stemmt sich gemeinsam gegen ein Tor, durch das Alien-Tentakel hereindrücken"
   },
+  "serviceUnavailable": {
+    "label": "Service zurzeit nicht verfügbar",
+    "title": "Wir sind gerade alle im Einsatz.",
+    "description": "Aktuell ist bei uns viel los und der Dienst ist vorübergehend nicht erreichbar. Unser Team arbeitet mit einem Lächeln auf Hochtouren. Bitte versuchen Sie es in Kürze erneut, kehren Sie zur Startseite zurück oder rufen Sie uns direkt an.",
+    "cta_home": "Zur Startseite",
+    "cta_call": "Praxis anrufen",
+    "image_alt": "Das Praxisteam ist hochbeschäftigt: Telefonieren, Akten tragen, Tippen am Computer und Patienten empfangen – alle lächelnd"
+  },
   "nav": {
     "home": "Home",
     "booking": "Termin",
