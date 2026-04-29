@@ -50,6 +50,14 @@
     "cta_call": "Praxis anrufen",
     "image_alt": "Das Praxisteam legt eine alte Webseite freundlich winkend in einen Archivkarton"
   },
+  "teapot": {
+    "label": "Kleine Teepause",
+    "title": "Wir machen gerade kurz Pause.",
+    "description": "Diese Seite ist eine kleine Augenzwinker-Seite (HTTP 418 – „I'm a teapot\"). Hier gibt es nichts Wichtiges zu sehen – nur unser Team bei einer wohlverdienten Tasse Tee. Kommen Sie gerne zur Startseite zurück oder rufen Sie uns an, wenn Sie etwas brauchen.",
+    "cta_home": "Zur Startseite",
+    "cta_call": "Praxis anrufen",
+    "image_alt": "Das Praxisteam sitzt gemeinsam an einem Tisch bei einer Teepause mit dampfender Teekanne"
+  },
   "nav": {
     "home": "Home",
     "booking": "Termin",
