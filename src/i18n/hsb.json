@@ -26,6 +26,14 @@
     "cta_call": "Praksu zazwonić",
     "image_alt": "Team praksy spyta z kontrole wušłeho robotera spokojić"
   },
+  "badGateway": {
+    "label": "Špatny gateway",
+    "title": "Něšto wotwonka z mocu tłóči.",
+    "description": "Předzapinjene zwiskowanje runje njewotmołwja – naš team so ze wšej mocu přećiwi. Prošu spytajće hišće raz, nawróćće so na startowu stronu abo zazwońće nam direktnje.",
+    "cta_home": "Na startowu stronu",
+    "cta_call": "Praksu zazwonić",
+    "image_alt": "Team praksy so hromadźe přećiwi wrotam, přez kotrež so alien-tentakle nutř tłóča"
+  },
   "nav": {
     "home": "Startowa strona",
     "booking": "Termin",

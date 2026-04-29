@@ -14,6 +14,7 @@ const Datenschutz = lazy(() => import("./pages/Datenschutz"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const Forbidden = lazy(() => import("./pages/Forbidden"));
 const ServerError = lazy(() => import("./pages/ServerError"));
+const BadGateway = lazy(() => import("./pages/BadGateway"));
 
 const DeferredLoader = ({ children }: { children: React.ReactNode }) => {
   const [ready, setReady] = useState(false);
@@ -44,6 +45,7 @@ const App = () => (
             <Route path="/datenschutz" element={<Datenschutz />} />
             <Route path="/403" element={<Forbidden />} />
             <Route path="/500" element={<ServerError />} />
+            <Route path="/502" element={<BadGateway />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>

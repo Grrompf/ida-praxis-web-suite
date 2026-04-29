@@ -26,6 +26,14 @@
     "cta_call": "Zadzwoń do gabinetu",
     "image_alt": "Zespół praktyki próbuje opanować oszalałego robota"
   },
+  "badGateway": {
+    "label": "Bad Gateway",
+    "title": "Coś napiera z całej siły z zewnątrz.",
+    "description": "Połączenie pośredniczące w tej chwili nie odpowiada – nasz zespół ze wszystkich sił trzyma drzwi. Prosimy spróbować ponownie za chwilę, wrócić na stronę główną lub zadzwonić do nas bezpośrednio.",
+    "cta_home": "Na stronę główną",
+    "cta_call": "Zadzwoń do gabinetu",
+    "image_alt": "Zespół praktyki wspólnie napiera na bramę, przez którą wciskają się obce macki"
+  },
   "nav": {
     "home": "Strona główna",
     "booking": "Wizyta",
