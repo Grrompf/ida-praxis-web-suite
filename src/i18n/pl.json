@@ -18,6 +18,14 @@
     "cta_call": "Zadzwoń do gabinetu",
     "image_alt": "Zespół praktyki stoi przed zablokowaną stroną internetową z ikoną kłódki"
   },
+  "serverError": {
+    "label": "Błąd serwera",
+    "title": "Coś nam się tu wymknęło spod kontroli.",
+    "description": "Na naszym serwerze wystąpił nieoczekiwany błąd. Nasz zespół już nad tym pracuje. Prosimy spróbować ponownie za chwilę, wrócić na stronę główną lub zadzwonić do nas bezpośrednio.",
+    "cta_home": "Na stronę główną",
+    "cta_call": "Zadzwoń do gabinetu",
+    "image_alt": "Zespół praktyki próbuje opanować oszalałego robota"
+  },
   "nav": {
     "home": "Strona główna",
     "booking": "Wizyta",

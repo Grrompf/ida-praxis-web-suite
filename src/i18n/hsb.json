@@ -18,6 +18,14 @@
     "cta_call": "Praksu zazwonić",
     "image_alt": "Team praksy steji před zawrjenej webstronu ze symbolom hladu"
   },
+  "serverError": {
+    "label": "Zmylk serwera",
+    "title": "Tu je nam něšto z kontrole wušło.",
+    "description": "Na našim serweru je so njewočakowany zmylk podał. Naš team hižo na tym dźěła. Prošu spytajće hišće raz, nawróćće so na startowu stronu abo zazwońće nam direktnje.",
+    "cta_home": "Na startowu stronu",
+    "cta_call": "Praksu zazwonić",
+    "image_alt": "Team praksy spyta z kontrole wušłeho robotera spokojić"
+  },
   "nav": {
     "home": "Startowa strona",
     "booking": "Termin",
