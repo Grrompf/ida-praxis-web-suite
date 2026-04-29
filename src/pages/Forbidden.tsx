@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { practice } from "@/config/practice";
-import forbiddenImage from "@/assets/403-team.png";
+import forbiddenImage from "@/assets/403-team.webp";
 
 const Forbidden = () => {
   const { t } = useTranslation();

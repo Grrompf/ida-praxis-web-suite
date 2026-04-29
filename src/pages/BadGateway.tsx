@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { practice } from "@/config/practice";
-import badGatewayImage from "@/assets/502-team.png";
+import badGatewayImage from "@/assets/502-team.webp";
 
 const BadGateway = () => {
   const { t } = useTranslation();

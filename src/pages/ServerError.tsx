@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { practice } from "@/config/practice";
-import serverErrorImage from "@/assets/500-team.png";
+import serverErrorImage from "@/assets/500-team.webp";
 
 const ServerError = () => {
   const { t } = useTranslation();

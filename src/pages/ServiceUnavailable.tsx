@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Home, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { practice } from "@/config/practice";
-import serviceUnavailableImage from "@/assets/503-team.png";
+import serviceUnavailableImage from "@/assets/503-team.webp";
 
 const ServiceUnavailable = () => {
   const { t } = useTranslation();
