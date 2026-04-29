@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Coffee } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { practice } from "@/config/practice";
 
@@ -50,8 +50,16 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-sm text-primary-foreground">
-          {t("footer.copyright")}
+        <div className="mt-10 pt-6 border-t border-primary-foreground/20 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-primary-foreground">
+          <span>{t("footer.copyright")}</span>
+          <Link
+            to="/418"
+            aria-label={t("footer.teapot_aria")}
+            title={t("footer.teapot_aria")}
+            className="opacity-30 hover:opacity-100 focus-visible:opacity-100 transition-opacity duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-foreground rounded-sm p-1"
+          >
+            <Coffee className="w-3.5 h-3.5" aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </footer>
