@@ -1,8 +1,20 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /403
+Disallow: /410
+Disallow: /418
+Disallow: /500
+Disallow: /502
+Disallow: /503
 
 User-agent: Bingbot
 Allow: /
+Disallow: /403
+Disallow: /410
+Disallow: /418
+Disallow: /500
+Disallow: /502
+Disallow: /503
 
 User-agent: Twitterbot
 Allow: /
@@ -12,5 +24,11 @@ Allow: /
 
 User-agent: *
 Allow: /
+Disallow: /403
+Disallow: /410
+Disallow: /418
+Disallow: /500
+Disallow: /502
+Disallow: /503
 
 Sitemap: https://ida-praxis.de/sitemap.xml
