@@ -56,9 +56,7 @@
     "description": "Ta strona to drobne mrugnięcie okiem (HTTP 418 – „I'm a teapot\"). Nie ma tu nic ważnego do zobaczenia – tylko nasz zespół przy zasłużonej filiżance herbaty. Wróć śmiało na stronę główną lub zadzwoń do nas, jeśli czegoś potrzebujesz.",
     "cta_home": "Na stronę główną",
     "cta_call": "Zadzwoń do gabinetu",
-    "image_alt": "Zespół praktyki siedzi razem przy stole podczas przerwy na herbatę z parującym dzbankiem",
-    "music_play": "Odtwórz relaksującą melodię herbacianą",
-    "music_stop": "Zatrzymaj melodię herbacianą"
+    "image_alt": "Zespół praktyki siedzi razem przy stole podczas przerwy na herbatę z parującym dzbankiem"
   },
   "nav": {
     "home": "Strona główna",
