@@ -26,6 +26,14 @@
     "cta_call": "Praxis anrufen",
     "image_alt": "Das Praxisteam versucht einen außer Kontrolle geratenen Roboter zu bändigen"
   },
+  "badGateway": {
+    "label": "Bad Gateway",
+    "title": "Da drückt etwas mit aller Macht von außen.",
+    "description": "Eine vorgeschaltete Verbindung antwortet gerade nicht – unser Team stemmt sich mit aller Kraft dagegen. Bitte versuchen Sie es in Kürze erneut, kehren Sie zur Startseite zurück oder rufen Sie uns direkt an.",
+    "cta_home": "Zur Startseite",
+    "cta_call": "Praxis anrufen",
+    "image_alt": "Das Praxisteam stemmt sich gemeinsam gegen ein Tor, durch das Alien-Tentakel hereindrücken"
+  },
   "nav": {
     "home": "Home",
     "booking": "Termin",
