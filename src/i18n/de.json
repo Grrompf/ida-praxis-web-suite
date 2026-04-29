@@ -56,7 +56,9 @@
     "description": "Diese Seite ist eine kleine Augenzwinker-Seite (HTTP 418 – „I'm a teapot\"). Hier gibt es nichts Wichtiges zu sehen – nur unser Team bei einer wohlverdienten Tasse Tee. Kommen Sie gerne zur Startseite zurück oder rufen Sie uns an, wenn Sie etwas brauchen.",
     "cta_home": "Zur Startseite",
     "cta_call": "Praxis anrufen",
-    "image_alt": "Das Praxisteam sitzt gemeinsam an einem Tisch bei einer Teepause mit dampfender Teekanne"
+    "image_alt": "Das Praxisteam sitzt gemeinsam an einem Tisch bei einer Teepause mit dampfender Teekanne",
+    "music_play": "Entspannende Teemelodie abspielen",
+    "music_stop": "Teemelodie stoppen"
   },
   "nav": {
     "home": "Home",
