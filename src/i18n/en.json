@@ -18,6 +18,14 @@
     "cta_call": "Call the practice",
     "image_alt": "The practice team standing in front of a locked webpage with a padlock icon"
   },
+  "serverError": {
+    "label": "Server error",
+    "title": "Something got a little out of hand here.",
+    "description": "An unexpected error occurred on our server. Our team is already on it. Please try again shortly, return to the homepage or give us a call directly.",
+    "cta_home": "Back to homepage",
+    "cta_call": "Call the practice",
+    "image_alt": "The practice team trying to tame a robot that has gone haywire"
+  },
   "nav": {
     "home": "Home",
     "booking": "Appointment",

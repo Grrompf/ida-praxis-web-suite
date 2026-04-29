@@ -18,6 +18,14 @@
     "cta_call": "Praxis anrufen",
     "image_alt": "Das Praxisteam steht vor einer gesperrten Webseite mit Schloss-Symbol"
   },
+  "serverError": {
+    "label": "Serverfehler",
+    "title": "Da ist uns etwas außer Kontrolle geraten.",
+    "description": "Auf unserem Server ist ein unerwarteter Fehler aufgetreten. Unser Team arbeitet bereits daran. Bitte versuchen Sie es in Kürze erneut, kehren Sie zur Startseite zurück oder rufen Sie uns direkt an.",
+    "cta_home": "Zur Startseite",
+    "cta_call": "Praxis anrufen",
+    "image_alt": "Das Praxisteam versucht einen außer Kontrolle geratenen Roboter zu bändigen"
+  },
   "nav": {
     "home": "Home",
     "booking": "Termin",
