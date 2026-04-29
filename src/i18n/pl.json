@@ -10,6 +10,14 @@
     "cta_call": "Zadzwoń do gabinetu",
     "image_alt": "Zespół praktyki bada brakującą stronę internetową przez lupę"
   },
+  "forbidden": {
+    "label": "Dostęp zabroniony",
+    "title": "Niestety dalej nie przejdziesz.",
+    "description": "Nie masz uprawnień, aby otworzyć tę stronę. Jeśli uważasz, że to błąd, wróć na stronę główną lub skontaktuj się z nami bezpośrednio.",
+    "cta_home": "Na stronę główną",
+    "cta_call": "Zadzwoń do gabinetu",
+    "image_alt": "Zespół praktyki stoi przed zablokowaną stroną internetową z ikoną kłódki"
+  },
   "nav": {
     "home": "Strona główna",
     "booking": "Wizyta",

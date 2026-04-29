@@ -10,6 +10,14 @@
     "cta_call": "Praksu zazwonić",
     "image_alt": "Team praksy pruwuje pobrachowacu webstronu z lupu"
   },
+  "forbidden": {
+    "label": "Přistup zapowědźeny",
+    "title": "Tu bohužel dale njeńdźe.",
+    "description": "Nimaće dowolnosć tutu stronu wočinić. Jeli měniće, zo je to zmylk, nawróćće so prošu na startowu stronu abo skontaktujće nas direktnje.",
+    "cta_home": "Na startowu stronu",
+    "cta_call": "Praksu zazwonić",
+    "image_alt": "Team praksy steji před zawrjenej webstronu ze symbolom hladu"
+  },
   "nav": {
     "home": "Startowa strona",
     "booking": "Termin",

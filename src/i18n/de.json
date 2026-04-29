@@ -10,6 +10,14 @@
     "cta_call": "Praxis anrufen",
     "image_alt": "Das Praxisteam untersucht eine fehlende Webseite mit einer Lupe"
   },
+  "forbidden": {
+    "label": "Zugriff verweigert",
+    "title": "Hier geht es leider nicht weiter.",
+    "description": "Sie haben keine Berechtigung, diese Seite aufzurufen. Falls Sie glauben, dass es sich um einen Fehler handelt, kehren Sie zur Startseite zurück oder kontaktieren Sie uns direkt.",
+    "cta_home": "Zur Startseite",
+    "cta_call": "Praxis anrufen",
+    "image_alt": "Das Praxisteam steht vor einer gesperrten Webseite mit Schloss-Symbol"
+  },
   "nav": {
     "home": "Home",
     "booking": "Termin",
